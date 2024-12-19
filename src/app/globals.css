@@ -2,20 +2,277 @@
 @tailwind components;
 @tailwind utilities;
 
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+h1,h2,h3,h4,h5,h6{
+  color: #18455D;
+}
+
+.left-right{
+  animation: left-right 5s linear infinite;
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+.home-banner{
+  background: url('/bannerImg.jpg');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.overlay{
+  background-color:#0C3246;
+  opacity: 0.65;
+  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+}
+
+.box-overlay{
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.35s ease-in-out;
+}
+
+.service-box:hover .box-overlay{
+  height: 100%;
+  visibility: visible;
+  opacity: .75;
+}
+
+.box-footer{
+  transition: all 0.35s ease-in-out;
+}
+
+.divider::before{
+  content: "";
+  height: 8px ;
+  width: 8px ;
+  border-radius: 100%;
+  background-color: #EF323A;
+  position: absolute;
+  left: 0;
+  top: -3px;
+  z-index: 1;
+  animation: divider-anim 5s ease infinite;
+}
+
+.service-box:hover .box-footer{
+  bottom: 0;
+  visibility: hidden;
+  opacity: 0;
+ 
+}
+
+.box-overlay{
+  background-color:#0C3246;
+  opacity: 0.75;
+}
+
+.line{
+
+  animation: top-bottom 5s linear infinite;
+}
+
+.bg-largeLine::before{
+  content: "";
+  position: absolute;
+  top: 8%;
+  left: 0;
+  border: 5px solid #FFFFFF;
+  background-color: white;
+  height: 24px;
+  width: 100%;
+  z-index: -1;
+  /* animation: top-bottom-sm 4s linear infinite; */
+}
+
+.bg-line::before{
+  content: "";
+  position: absolute;
+  top: 70%;
+  left: 0;
+  border: 5px solid #EF323A;
+  height: 8px;
+  width: 100%;
+  z-index: -1;
+  animation: top-bottom-sm 4s linear infinite;
+}
+
+.divider{
+  width: 70px;
+background-color: #DEDEDE;
+  height: 3px;
+}
+
+.services{
+  margin-top: -120px;
+}
+
+.service-box:hover .service-round{
+    opacity: 1;
+}
+.service-box:hover .img{
+    transform: scale(0.84);
+}
+
+.up-arrow{
+  animation: top-bottom 4s linear infinite;
+}
+
+.up-down{
+  animation: top-bottom 4s linear 1s infinite;
+}
+
+.slider-container {
+  @apply mx-auto w-full ; /* Center the slider and limit its width */
+}
+.image-wrapper {
+  @apply mx-auto rounded-lg shadow-lg; /* Center the image, add rounded corners and shadow */
+}
+
+
+
+.slick-track{
+  padding:  28px 0 ;
+}
+
+.slick-center{
+  transform: scale(1.12);
+  border-radius: 14px;
+  transition: all .6s;
+}
+
+.slick-slider h4{
+
+
+
+  margin-top: -152px;
+  margin-right: -10px;
+  width: 75px;
+  text-align: center;
+  padding-bottom: 15px;
+  padding-top: 6rem;
+  margin-bottom: 2.5rem;
+  background-color: #e74860;
+  font-weight: 500;
+  color: #fff;
+  align-self: end;
+  font-size: 2.85rem;
+  line-height: 3.4rem;
+}
+
+.testimonial{
+  background: url('/bg-15.png'), #0C3246;
+}
+
+.client-sec:hover .client-logo{
+  filter: blur(2px);
+}
+
+
+.client-logo{
+  transition: all 0.5s;
+}
+
+.client-logo:hover{
+  filter: blur(0) !important;
+  cursor: pointer;
+}
+
+.contact-bg{
+  background: '';
+}
+
+.testimonial button::before{
+  font-size: 14px;
+}
+.testimonial button::before{
+ color: #ffffff !important;
+}
+
+.testimonial .slick-active button::before{
+   color: #EF323A !important;
+}
+
+.team-container:hover .team-box{
+  transform: translateY(-50%);
+  border: 1px solid #f6f3ee;
+}
+.team-container:hover .team-img{
+ filter: brightness(1.1) contrast(1.1);
+}
+.team-container:hover .team-social{
+ visibility: visible;
+}
+
+@keyframes left-right {
+  0%{
+    transform:  translateX(0);
+
+  }
+  25%{
+    transform: translateX(-20px);
+  }
+  50%{
+    transform: translateX(0px);
+  }
+  75%{
+    transform: translateX(20px);
+  }
+}
+
+
+@keyframes top-bottom {
+  0%{
+    transform: translateY(0);
+  }
+  25%{
+    transform: translateY(-15px);
+  }
+  50%{
+    transform: translateY(0);
+  }
+  75%{
+    transform: translateY(15px);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
+@keyframes top-bottom-sm {
+  0%{
+    transform: translateY(0);
+  }
+  25%{
+    transform: translateY(-10px);
+  }
+  50%{
+    transform: translateY(0);
+  }
+  75%{
+    transform: translateY(10px);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
+
+@keyframes divider-anim{
+  0%{
+    transform: translateX(0);
+  }
+  50%{
+    transform: translateX(70px);
+  }
+  100%{
+    transform: translateX(0);
+  }
 }
