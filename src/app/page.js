@@ -5,6 +5,7 @@ import Contact from "@/components/Contact";
 import Process from "@/components/Process";
 import Services from "@/components/Services";
 import Team from "@/components/Team";
+import Technologies from "@/components/Technologies";
 import Technology from "@/components/Technology";
 import Testimonial from "@/components/Testimonial";
 import Image from "next/image";
@@ -18,6 +19,7 @@ export default function Home() {
    <Technology />
    <Process/>
    <Testimonial/>
+   <Technologies/>
    <Team/>
    <Contact/>
    </>

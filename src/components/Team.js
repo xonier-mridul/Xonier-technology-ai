@@ -25,11 +25,11 @@ const Team = () => {
                 alt='dhiredra Kumar'
                 />
                 <div className=' team-box transition-all duration-500 w-[80%] bg-white p-4 flex justify-center flex-col items-center hover:border-[1px] hover:border-[#f6f3ee]'>
-                    <h2 className='text-2xl font-bold pb-2'>Dhirendra Kumar </h2>
+                    <h2 className='text-2xl font-bold pb-2'>Dhirendra Kumar</h2>
                     <span className='text-lg text-red-500 font-medium pb-4'>Co Founder & CEO</span>
                     <ul className='team-social flex invisible justify-center items-center gap-3'>
                         <li><Link className='bg-[#18455D] h-10 w-10 rounded-full flex items-center justify-center text-white hover:bg-red-500 transition-all duration-500' href={'/'}><FaLinkedinIn /></Link></li>
-                        
+
                         <li><Link className='bg-[#18455D] h-10 w-10 rounded-full flex items-center justify-center text-white hover:bg-red-500 transition-all duration-500' href={'/'}><FaFacebookF /></Link></li>
                     </ul>
                 </div>

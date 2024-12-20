@@ -24,7 +24,7 @@ const Contact = () => {
   return (
     <>
       <div className='w-full py-20 contact-bg relative overflow-hidden'>
-      <video className='w-full absolute top-0 left-0' width="320" height="320"  autoPlay loop >
+      <video className='w-full absolute top-0 left-0' width="320" height="320" autoPlay loop controls >
       <source className='w-full h-[500px] inline-block'  src="/brain-ai.mp4" type="video/mp4" />
       
       Your browser does not support the video tag.
