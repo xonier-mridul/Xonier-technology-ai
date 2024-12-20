@@ -1,81 +1,79 @@
 import React from "react";
-import { MdAppShortcut } from "react-icons/md";
-import { MdAppSettingsAlt } from "react-icons/md";
-import { MdOutlineSupportAgent } from "react-icons/md";
-import { MdCloudDone } from "react-icons/md";
+
+
 import Link from "next/link";
 
-const MegaMenuRight = () => {
+const MegaMenuRight = ({heading, para, iconOne, headingOne, headingOnePara, iconTwo, headingTwo, headingTwoPara, iconThree, headingThree, headingThreePara, iconFour, headingFour, headingFourPara}) => {
   return (
     <>
       <div className="w-full">
-        <div className="w-full flex flex-col  border-b-[1px] pb-6 ">
-          <h3 className="text-2xl font-medium capitalize">Other Services</h3>
-          <p className="text-[#42545e] text-sm normal-case">
-            Explore our diverse services
+        <div className="w-full flex flex-col  border-b-[1px] pb-6 " >
+          <h3 className="text-2xl font-medium capitalize" data-aos="zoom-in" data-aos-duration="400">{heading}</h3>
+          <p className="text-[#42545e] text-sm normal-case" data-aos="zoom-in" data-aos-duration="400">
+            {para}
           </p>
         </div>
         <ul className="w-full py-6 flex flex-col gap-5">
           <li>
-            <Link className="flex items-center gap-3" href={"/"}>
+            <Link className="flex items-center gap-3" href={"/"} data-aos="zoom-in" data-aos-duration="400">
               
               <span>
-                <MdAppShortcut className=" text-3xl text-red-500" />
+                {iconOne}
               </span>
               <div>
                 <h3 className="text-lg font-medium capitalize">
-                  Software Development
+                  {headingOne}
                 </h3>
                 <p className="text-[#42545e] text-sm normal-case font-medium">
-                  Innovative, future-proof software
+                  {headingOnePara}
                 </p>
               </div>
             </Link>
           </li>
           <li>
-            <Link className="flex items-center gap-3" href={"/"}>
+            <Link className="flex items-center gap-3" href={"/"} data-aos="zoom-in" data-aos-duration="400" data-aos-delay="100">
               
               <span>
-                <MdAppSettingsAlt className=" text-3xl text-red-500" />
+               {iconTwo}
               </span>
               <div>
                 <h3 className="text-lg font-medium capitalize">
-                  OTT App Development
+                  {headingTwo}
                 </h3>
                 <p className="text-[#42545e] text-sm normal-case font-medium">
-                  Innovative, future-proof software
+                  {headingTwoPara}
                 </p>
               </div>
             </Link>
           </li>
           <li>
-            <Link className="flex items-center gap-3" href={"/"}>
+            <Link className="flex items-center gap-3" href={"/"} data-aos="zoom-in" data-aos-duration="400" data-aos-delay="200">
               
               <span>
-                <MdOutlineSupportAgent className=" text-3xl text-red-500" />
+                {iconThree}
               </span>
               <div>
                 <h3 className="text-lg font-medium capitalize">
-                  App Maintenance & Support
+                  {headingThree}
                 </h3>
                 <p className="text-[#42545e] text-sm normal-case font-medium">
-                  Innovative, future-proof software
+                  {headingThreePara}
                 </p>
               </div>
             </Link>
           </li>
           <li>
-            <Link className="flex items-center gap-3" href={"/"}>
+            <Link className="flex items-center gap-3" href={"/"} data-aos="zoom-in" data-aos-duration="400" data-aos-delay="300">
               
               <span>
-                <MdCloudDone className=" text-3xl text-red-500" />
+                {iconFour}
               </span>
               <div>
                 <h3 className="text-lg font-medium capitalize">
-                  Cloud App Development
+                 {headingFour}
                 </h3>
                 <p className="text-[#42545e] text-sm normal-case font-medium">
-                  Innovative, future-proof software
+                  {headingFourPara}
                 </p>
               </div>
             </Link>

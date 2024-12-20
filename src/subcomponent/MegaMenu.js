@@ -11,6 +11,18 @@ import { MdCloudDone } from "react-icons/md";
 import { FaBrain } from "react-icons/fa";
 import MegaMenuCenter from './MegaMenuCenter';
 import MegaMenuRight from './MegaMenuRight';
+import { MdAppShortcut } from "react-icons/md";
+import { MdAppSettingsAlt } from "react-icons/md";
+import { MdOutlineSupportAgent } from "react-icons/md";
+import { MdRocketLaunch } from "react-icons/md";
+import { MdFactory } from "react-icons/md";
+import { BsBuildingsFill } from "react-icons/bs";
+import { MdWebStories } from "react-icons/md";
+import { FaSellcast } from "react-icons/fa6";
+import { FaAws } from "react-icons/fa";
+import { VscAzure } from "react-icons/vsc";
+import { SiGooglecloud } from "react-icons/si";
+
 
 const MegaMenu = () => {
 
@@ -65,7 +77,25 @@ const MegaMenu = () => {
             {Active === 8 && <MegaMenuCenter icon={<FaBrain className="text-4xl text-red-500" />}  heading={'AI & ML Solution'} subheading={'Derive technological innovation'} listOneHeading={'Artificial Intelligence'} listTwoHeading={'MI & Advanced Analytics '} consultServiceOne={'AI Consulting'} consultServiceOnePara={'Navigating AI is future'} consultServiceTwo={'AI Development'} consultServiceTwoPara={'Advancing intelligent solutions'} consultServiceThree={'AI Chatbot Development'} consultServiceThreePara={'Future-ready chatbots '} consultServiceFour={'AI-Powered App Development'} consultServiceFourPara={'Innovative AI mobile apps'} DevelopmentServiceOne={'MLOps Consulting'} DevelopmentServiceOnePara={'ML operations optimized'} DevelopmentServiceTwo={'ML Development'}  DevelopmentServiceTwoPara={'Harnessing data power'} DevelopmentServiceThree={'Computer Vision Solutions'} DevelopmentServiceThreePara={'Transforming visual data'} DevelopmentServiceFour={'RPA Services'} DevelopmentServiceFourPara={'Efficient RPA automation'}/>}
            </div>
            <div className="w-1/4 py-5">
-            <MegaMenuRight/>
+
+
+            {Active === 1 && <MegaMenuRight heading={'Other Services'} para={'Explore our diverse services'} iconOne={<MdAppShortcut className=" text-3xl text-red-500" />} headingOne={'Application Modernization'} headingOnePara={'Update your application'} iconTwo={ <MdAppSettingsAlt className=" text-3xl text-red-500" />} headingTwo={'OTT App Development'} headingTwoPara={'Innovative, future-proof software'} iconThree={<MdOutlineSupportAgent className=" text-3xl text-red-500" />} headingThree={'App Maintenance & Support'} headingThreePara={'Innovative, future-proof software'} iconFour={<MdCloudDone className=" text-3xl text-red-500" />} headingFour={'Cloud App Development'} headingFourPara={'Innovative, future-proof software'}/>}
+
+            {Active === 2 && <MegaMenuRight heading={'Other Services'} para={'Explore our diverse services'} iconOne={<MdAppShortcut className=" text-3xl text-red-500" />} headingOne={'Application Modernization'} headingOnePara={'Update your application'} iconTwo={ <MdAppSettingsAlt className=" text-3xl text-red-500" />} headingTwo={'OTT App Development'} headingTwoPara={'Innovative, future-proof software'} iconThree={<MdOutlineSupportAgent className=" text-3xl text-red-500" />} headingThree={'App Maintenance & Support'} headingThreePara={'Innovative, future-proof software'} iconFour={<MdCloudDone className=" text-3xl text-red-500" />} headingFour={'Cloud App Development'} headingFourPara={'Innovative, future-proof software'}/>}
+
+
+            {Active === 3 && <MegaMenuRight heading={'Client Type'} para={'Tailored solutions for all businesses'} iconOne={<MdRocketLaunch className=" text-3xl text-red-500" />} headingOne={'For Startups'} headingOnePara={'Custom software for business goals'} iconTwo={ <MdFactory className=" text-3xl text-red-500" />} headingTwo={'For Enterprises'} headingTwoPara={'End-to-end automation solutions'} iconThree={<BsBuildingsFill className=" text-3xl text-red-500" />} headingThree={'For Agencies'} headingThreePara={'Expand with white-label services'} iconFour={''} headingFour={''} headingFourPara={''}/>}
+
+            {Active === 4 && <MegaMenuRight heading={'Solutions'} para={'Boost sales with smart eCommerce'} iconOne={<MdRocketLaunch className=" text-3xl text-red-500" />} headingOne={'B2C eCommerce'} headingOnePara={'Gain more customers with B2C solutions'} iconTwo={ <BsBuildingsFill className=" text-3xl text-red-500" />} headingTwo={'B2B eCommerce'} headingTwoPara={'Create digital business solutions with B2B'} iconThree={<MdWebStories className=" text-3xl text-red-500" />} headingThree={'Web Portals'} headingThreePara={'Build user-friendly, feature-rice store'} iconFour={<FaSellcast className=" text-3xl text-red-500" />} headingFour={'Supply Chain Automation'} headingFourPara={'Streamline, optimize, automate supply chain'}/>}
+
+            {Active === 5 && <MegaMenuRight heading={'Client Type'} para={'Tailored solutions for all businesses'} iconOne={<MdRocketLaunch className=" text-3xl text-red-500" />} headingOne={'For Startups'} headingOnePara={'Custom software for business goals'} iconTwo={ <MdFactory className=" text-3xl text-red-500" />} headingTwo={'For Enterprises'} headingTwoPara={'End-to-end automation solutions'} iconThree={<BsBuildingsFill className=" text-3xl text-red-500" />} headingThree={'For Agencies'} headingThreePara={'Expand with white-label services'} iconFour={''} headingFour={''} headingFourPara={''}/>}
+
+            {Active === 6 && <MegaMenuRight heading={'Technologies'} para={'Innovating the Future'} iconOne={<FaAws className=" text-3xl text-red-500" />} headingOne={'Amazon AWS'} headingOnePara={'Build, scale, innovate on AWS'} iconTwo={ <VscAzure className=" text-3xl text-red-500" />} headingTwo={'Azure'} headingTwoPara={'End-to-end automation solutions'} iconThree={<SiGooglecloud className=" text-3xl text-red-500" />} headingThree={'Google Cloud'} headingThreePara={'Explore limitless potential with google'} iconFour={''} headingFour={''} headingFourPara={''}/>}
+
+            {Active === 7 && <MegaMenuRight heading={'Client Type'} para={'Tailored solutions for all businesses'} iconOne={<MdRocketLaunch className=" text-3xl text-red-500" />} headingOne={'For Startups'} headingOnePara={'Custom software for business goals'} iconTwo={ <MdFactory className=" text-3xl text-red-500" />} headingTwo={'For Enterprises'} headingTwoPara={'End-to-end automation solutions'} iconThree={<BsBuildingsFill className=" text-3xl text-red-500" />} headingThree={'For Agencies'} headingThreePara={'Expand with white-label services'} iconFour={''} headingFour={''} headingFourPara={''}/>}
+
+            {Active === 8 && <MegaMenuRight heading={'Other Services'} para={'Explore our diverse services'} iconOne={<MdAppShortcut className=" text-3xl text-red-500" />} headingOne={'Application Modernization'} headingOnePara={'Update your application'} iconTwo={ <MdAppSettingsAlt className=" text-3xl text-red-500" />} headingTwo={'OTT App Development'} headingTwoPara={'Innovative, future-proof software'} iconThree={<MdOutlineSupportAgent className=" text-3xl text-red-500" />} headingThree={'App Maintenance & Support'} headingThreePara={'Innovative, future-proof software'} iconFour={<MdCloudDone className=" text-3xl text-red-500" />} headingFour={'Cloud App Development'} headingFourPara={'Innovative, future-proof software'}/>}
+
            </div>
         </div>
 
