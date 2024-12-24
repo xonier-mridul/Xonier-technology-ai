@@ -16,7 +16,6 @@ const MegaMenuRight = ({heading, para, iconOne, headingOne, headingOnePara, icon
         <ul className="w-full py-6 flex flex-col gap-5">
           <li>
             <Link className="flex items-center gap-3" href={"/"} data-aos="zoom-in" data-aos-duration="400">
-              
               <span>
                 {iconOne}
               </span>

@@ -24,45 +24,47 @@ import { VscAzure } from "react-icons/vsc";
 import { SiGooglecloud } from "react-icons/si";
 
 
-const MegaMenu = () => {
+const MegaMenu = ({listOne, listOneIcon, listTwo, listTwoIcon, listThree, listThreeIcon, listFour, listFourIcon, listFive, listFiveIcon, listSix, listSixIcon, listSeven, listSevenIcon, listEight, listEightIcon, hide}) => {
 
    const [Active, setActive] = useState(2);
 
    const handleActive = (i)=>{
       setActive(i)
    }
+   
+   console.log(typeof(listThreeIcon))
 
 
   return (
     <>
-      <div className='megamenus absolute top-0 w-[100vw] z-30 bg-white light-bg '>
+      <div className='megamenus absolute top-0 w-[100vw] z-30 bg-white light-bg ' onMouseLeave={hide}>
         <div className="max-w-7xl mx-auto flex items-start gap-6">
            <div className="w-1/4 megamenu-left py-5 pr-3">
-           <ul className='flex flex-col gap-2 '>
-             <li className={`${Active === 1 && "bg-active"} mega-list p-3 flex items-center gap-3 w-full justify-between rounded-md text-[#18455D] capitalize `} onClick={()=>handleActive(1)}><span className='flex items-center gap-3'> <GrCloudSoftware className='text-xl'/> Software Development</span> <FaArrowRightLong className={ ` mega-icon transition-all duration-500 text-white invisible ${Active === 1 && "bg-active-icon"}`}/></li>
+           <ul className='flex flex-col gap-2'>
+             <li className={`${Active === 1 && "bg-active"} mega-list p-3 flex items-center gap-3 w-full justify-between rounded-md text-[#18455D] capitalize `} onClick={()=>handleActive(1)}><span className='flex items-center gap-3'>{listOneIcon}  {listOne}</span> <FaArrowRightLong className={ `mega-icon transition-all duration-500 text-white invisible ${Active === 1 && "bg-active-icon"}`} data-aos="zoom-in" data-aos-duration="400"/></li>
 
-             <li className={`${Active === 2 && "bg-active"} mega-list p-3 flex items-center gap-3 w-full justify-between rounded-md text-[#18455D] capitalize `} onClick={()=>handleActive(2)}> <span className='flex items-center gap-3'> <MdOutlineDeveloperMode className='text-lg'/>Application Development </span> <FaArrowRightLong className='mega-icon transition-all duration-500 text-white invisible'/></li>
+             <li className={`${Active === 2 && "bg-active"} mega-list p-3 flex items-center gap-3 w-full justify-between rounded-md text-[#18455D] capitalize`} onClick={()=>handleActive(2)}> <span className='flex items-center gap-3'> {listTwoIcon} {listTwo}</span> <FaArrowRightLong className='mega-icon transition-all duration-500 text-white invisible' data-aos="zoom-in" data-aos-duration="400" /></li>
 
-             <li className={` ${Active === 3 && "bg-active"} mega-list p-3 flex items-center gap-3 w-full justify-between rounded-md text-[#18455D] capitalize `} onClick={()=>handleActive(3)}><span className='flex items-center gap-3'> <BsMicrosoftTeams className='text-xl'/> Software Team </span> <FaArrowRightLong className='mega-icon transition-all duration-500 text-white invisible'/> </li>
+              <li className={`${Active === 3 && "bg-active"} mega-list p-3 flex items-center gap-3 w-full justify-between rounded-md text-[#18455D] capitalize `} onClick={()=>handleActive(3)}><span className='flex items-center gap-3'> {listThreeIcon}  {listThree} </span> <FaArrowRightLong className='mega-icon transition-all duration-500 text-white invisible'/> </li>
 
-             <li className={` ${Active === 4 && "bg-active"} mega-list p-3 flex items-center gap-3 w-full justify-between rounded-md text-[#18455D] capitalize `} onClick={()=>handleActive(4)}>  <span className='flex items-center gap-3'> <FaCartPlus className='text-xl'/>eCommerce
+             <li className={` ${Active === 4 && "bg-active"} mega-list p-3 flex items-center gap-3 w-full justify-between rounded-md text-[#18455D] capitalize `} onClick={()=>handleActive(4)}>  <span className='flex items-center gap-3'> {listFourIcon} {listFour}
               </span><FaArrowRightLong className='mega-icon transition-all duration-500 text-white invisible'/></li>
 
-             <li className={`${Active === 5 && "bg-active"} mega-list p-3 flex items-center gap-3 w-full justify-between rounded-md text-[#18455D] capitalize `} onClick={()=>handleActive(5)}><span className='flex items-center gap-3'> <MdAutoGraph className='text-xl'/> QA and Testing </span> <FaArrowRightLong className='mega-icon transition-all duration-500 text-white invisible'/></li>
+             <li className={`${Active === 5 && "bg-active"} mega-list p-3 flex items-center gap-3 w-full justify-between rounded-md text-[#18455D] capitalize `} onClick={()=>handleActive(5)}><span className='flex items-center gap-3'> {listFiveIcon} {listFive} </span> <FaArrowRightLong className='mega-icon transition-all duration-500 text-white invisible'/></li>
 
-             <li className={ `${Active === 6 && "bg-active"} mega-list p-3 flex items-center gap-3 w-full justify-between rounded-md text-[#18455D] capitalize `} onClick={()=>handleActive(6)}> <span className='flex items-center gap-3'> <MdCloudDone className='text-xl'/> Cloud Testing  </span><FaArrowRightLong className='mega-icon transition-all duration-500 text-white invisible'/></li>
+             <li className={ `${Active === 6 && "bg-active"} mega-list p-3 flex items-center gap-3 w-full justify-between rounded-md text-[#18455D] capitalize `} onClick={()=>handleActive(6)}> <span className='flex items-center gap-3'> {listSixIcon} {listSix}  </span><FaArrowRightLong className='mega-icon transition-all duration-500 text-white invisible'/></li>
 
-             <li className={` ${Active === 7 && "bg-active"} mega-list p-3 flex items-center gap-3 w-full justify-between rounded-md text-[#18455D] capitalize `} onClick={()=>handleActive(7)}><span className='flex items-center gap-3'> <BsDatabaseFillGear className='text-xl'/>Data Solution </span> <FaArrowRightLong className='mega-icon transition-all duration-500 text-white invisible'/></li>
+             <li className={`${Active === 7 && "bg-active"} mega-list p-3 flex items-center gap-3 w-full justify-between rounded-md text-[#18455D] capitalize `} onClick={()=>handleActive(7)}><span className='flex items-center gap-3'> {listSevenIcon} {listSeven} </span> <FaArrowRightLong className='mega-icon transition-all duration-500 text-white invisible'/></li>
 
-             <li className={`${Active === 8 && "bg-active"} mega-list p-3 flex items-center gap-3 w-full justify-between rounded-md text-[#18455D] capitalize `} onClick={()=>handleActive(8)}><span className='flex items-center gap-3'> <FaBrain className='text-xl'/> AI & ML Solution </span><FaArrowRightLong className='mega-icon transition-all duration-500 text-white invisible'/></li>
+             <li className={`${Active === 8 && "bg-active"} mega-list p-3 flex items-center gap-3 w-full justify-between rounded-md text-[#18455D] capitalize `} onClick={()=>handleActive(8)}><span className='flex items-center gap-3'> {listEight} </span><FaArrowRightLong className='mega-icon transition-all duration-500 text-white invisible'/></li>
            </ul>
            
            </div>
-           <div className="w-2/4  h-full py-5">
+           <div className="w-2/4 h-full py-5">
                
             {Active === 1 && <MegaMenuCenter icon={<GrCloudSoftware className="text-4xl text-red-500" />} heading={'Software Development'} subheading={'Innovative, future-proof software solutions'} listOneHeading={'Consulting'} listTwoHeading={'Development'} consultServiceOne={'Software Consulting'} consultServiceOnePara={'Expert advice on tech'} consultServiceTwo={'IT Consulting'} consultServiceTwoPara={'Expert IT solutions, delivered'} consultServiceThree={'Agile Consulting'} consultServiceThreePara={'Agile expertise, faster results'} consultServiceFour={'CRM Consulting'} consultServiceFourPara={'Optimizing Customers Relation'} DevelopmentServiceOne={'Custom Software'} DevelopmentServiceOnePara={'Tailored solutions for excellence'} DevelopmentServiceTwo={'Enterprise Software'}  DevelopmentServiceTwoPara={'Powering enterprise growth'} DevelopmentServiceThree={'Software Product Engineering '} DevelopmentServiceThreePara={'Building market ready software'} DevelopmentServiceFour={'Application Development'} DevelopmentServiceFourPara={'Transform idea into powerful apps'}/>}
 
-            {Active === 2 && <MegaMenuCenter icon={<MdOutlineDeveloperMode className="text-4xl text-red-500" />}  heading={'Application Development'} subheading={'And-to-end app development'} listOneHeading={''} listTwoHeading={''} consultServiceOne={'Web App Development'} consultServiceOnePara={'Innovative browser application'} consultServiceTwo={'Mobile App Development'} consultServiceTwoPara={'Seamless Mobile Experience'} consultServiceThree={'API Development'} consultServiceThreePara={'Efficient API development'} consultServiceFour={'Website & Portal Development'} consultServiceFourPara={'Secure user-centric solution'} DevelopmentServiceOne={'Front End Development'} DevelopmentServiceOnePara={'Flawless UI/UX creation'} DevelopmentServiceTwo={'Backend Development'}  DevelopmentServiceTwoPara={'Robust server/client experience'} DevelopmentServiceThree={'Cross-Platform App Development'} DevelopmentServiceThreePara={'Unified multi-platform solution'} DevelopmentServiceFour={'Full Stack Development'} DevelopmentServiceFourPara={'Secure scalable applications '}/>}
+            {Active === 2 && <MegaMenuCenter icon={<MdOutlineDeveloperMode className="text-4xl text-red-500" />} heading={'Application Development'} subheading={'And-to-end app development'} listOneHeading={''} listTwoHeading={''} consultServiceOne={'Web App Development'} consultServiceOnePara={'Innovative browser application'} consultServiceTwo={'Mobile App Development'} consultServiceTwoPara={'Seamless Mobile Experience'} consultServiceThree={'API Development'} consultServiceThreePara={'Efficient API development'} consultServiceFour={'Website & Portal Development'} consultServiceFourPara={'Secure user-centric solution'} DevelopmentServiceOne={'Front End Development'} DevelopmentServiceOnePara={'Flawless UI/UX creation'} DevelopmentServiceTwo={'Backend Development'}  DevelopmentServiceTwoPara={'Robust server/client experience'} DevelopmentServiceThree={'Cross-Platform App Development'} DevelopmentServiceThreePara={'Unified multi-platform solution'} DevelopmentServiceFour={'Full Stack Development'} DevelopmentServiceFourPara={'Secure scalable applications '}/>}
 
             {Active === 3 && <MegaMenuCenter icon={<BsMicrosoftTeams className="text-4xl text-red-500" />}  heading={'Dedicated Software Team'} subheading={'Skilled developers, Transparent billing '} listOneHeading={'Expertise'} listTwoHeading={'solutions'} consultServiceOne={'Staff Augmentation'} consultServiceOnePara={'Access top technical resources on-demand'} consultServiceTwo={'Hire Software Developers'} consultServiceTwoPara={'Work with skilled & dedicated developers'} consultServiceThree={'IT Outsourcing'} consultServiceThreePara={'Technical expertise, shared time zone'} consultServiceFour={''} consultServiceFourPara={''} DevelopmentServiceOne={'Offshore Development Center'} DevelopmentServiceOnePara={'Unleash the power of offshore development'} DevelopmentServiceTwo={'Offshore Software Development'}  DevelopmentServiceTwoPara={'Leverage talent, cost-effectiveness'} DevelopmentServiceThree={'Nearshore Software Development'} DevelopmentServiceThreePara={'Technical expertise, shared time zone'} DevelopmentServiceFour={'Software Development in India'} DevelopmentServiceFourPara={'Technical expertise, shared time zone'}/>}
 

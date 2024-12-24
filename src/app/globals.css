@@ -300,6 +300,22 @@ background-color: #DEDEDE;
   color: #FFFFFF !important;
 }
 
+.gap-x-10 {
+  column-gap: 2.5rem;
+}
+
+.gap-y-2 {
+  row-gap: 0.5rem /* 8px */;
+}
+
+.w-3\/4 {
+  width: 75%;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
 /* .megamenu-center{
   height: 100vh;
   overflow-y: scroll;

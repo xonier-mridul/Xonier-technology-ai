@@ -1,14 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { FaArrowRightLong } from "react-icons/fa6";
-import { GrCloudSoftware } from "react-icons/gr";
-import { MdOutlineDeveloperMode } from "react-icons/md";
-import { BsMicrosoftTeams } from "react-icons/bs";
-import { FaCartPlus } from "react-icons/fa";
-import { MdAutoGraph } from "react-icons/md";
-import { BsDatabaseFillGear } from "react-icons/bs";
-import { MdCloudDone } from "react-icons/md";
-import { FaBrain } from "react-icons/fa";
+
 
 const MegaMenuCenter = ({icon ,heading,subheading, listOneHeading, listTwoHeading, consultServiceOne, consultServiceOnePara, consultServiceTwo, consultServiceTwoPara, consultServiceThree,consultServiceThreePara, consultServiceFour, consultServiceFourPara, DevelopmentServiceOne, DevelopmentServiceOnePara, DevelopmentServiceTwo, DevelopmentServiceTwoPara, DevelopmentServiceThree, DevelopmentServiceThreePara, DevelopmentServiceFour, DevelopmentServiceFourPara}) => {
   return (
