@@ -286,6 +286,18 @@ background-color: #DEDEDE;
   
 }
 
+.whitespace-nowrap {
+  white-space: nowrap;
+}
+
+.mega-center-list p{
+  transition: all 0.4s ;
+}
+
+.mega-center-list:hover p{
+  color: #EF4444;
+}
+
 .megamenu-left{
   border-right: 1px solid #e5e7eb;
 

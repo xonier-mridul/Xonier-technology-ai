@@ -16,6 +16,13 @@ import { FaBrain } from "react-icons/fa";
 import { FaLaptopCode } from "react-icons/fa";
 import { FaArrowTrendUp } from "react-icons/fa6";
 import TechnologyMegaMenu from '@/subcomponent/TechnologyMegaMenu'
+import HireMegaMenu from '@/subcomponent/HireMegaMenu'
+import { FaCode } from "react-icons/fa";
+import { FaReact } from "react-icons/fa";
+import { SiNextdotjs } from "react-icons/si";
+import { FaDev } from "react-icons/fa6";
+import { FaWordpress } from "react-icons/fa";
+
 
 const Navbar = () => {
   const pathname = usePathname()
@@ -58,7 +65,6 @@ const Navbar = () => {
   })
 }, [])
   
-
   return (
     <>
     <div className={`${isScrolled? "bg-white shadow-[0_5px_14px_#00000016] ": "bg-transparent"} fixed w-full top-0 left-0 py-5 z-20 border-b-[1px] border-[#ffffff1a] `}>
@@ -86,14 +92,22 @@ const Navbar = () => {
                 {showMega === 1 && <MegaMenu listOne={'Software Development'} listOneIcon={<GrCloudSoftware className='text-xl'/>} listTwo={'Application Development '} listTwoIcon={<MdOutlineDeveloperMode className='text-lg'/>} listThree={'Software Team'} listThreeIcon={<BsMicrosoftTeams className='text-xl'/>} listFour={'eCommerce'} listFourIcon={<FaCartPlus className='text-xl'/>} listFive={'QA and Testing'} listFiveIcon={<MdAutoGraph className='text-xl'/>} listSix={'Cloud Testing'} listSixIcon={<MdCloudDone className='text-xl'/>} listSeven={'Data Solution'} listSevenIcon={<BsDatabaseFillGear className='text-xl'/>} listEight={'AI & ML Solution'} listEightIcon={<FaBrain className='text-xl'/>} hide={()=>setShowMega(0)} />}
 
                 </li>
-                <li><Link className={`${isScrolled ? "text-[#18455D]" :"text-white"} font-bold uppercase`} href={'/'} onMouseEnter={()=>setShowMega(2)} >Technology </Link>
+
+                <li> <Link href={'/'} className={`${isScrolled ? "text-[#18455D]" : "text-white"} font-bold uppercase`} onMouseEnter={()=>setShowMega(3)}>Hire </Link>
+                  
+                   {showMega === 3 && <HireMegaMenu listOneIcon={<FaCode className='text-lg'/>} listOne={'Backend'} listTwoIcon={<FaReact className='text-lg'/>} listTwo={'Frontend'} listThreeIcon={<FaBrain className='text-lg'/>} listThree={'AI/ML'} listFourIcon={<BsDatabaseFillGear className='text-lg'/>} listFour={'Data Solution'} listFiveIcon={<MdOutlineDeveloperMode className='text-xl'/>} listFive={'Mobile'} listSix={'Full Stack'} listSixIcon={<SiNextdotjs className='text-lg'/>} listSevenIcon={<FaDev className='text-lg'/>} listSeven={'DevOps'} listEightIcon={<FaWordpress className='text-lg'/>} listEight={'CMS'} hide={()=>setShowMega(0)}/> }
+
+                </li>
+
+                <li><Link className={`${isScrolled ? "text-[#18455D]" : "text-white"} font-bold uppercase`} href={'/'} onMouseEnter={()=>setShowMega(2)} >Technology </Link>
 
                 {showMega === 2 && <TechnologyMegaMenu listOne={'Trending & Platforms'} listOneIcon={<FaArrowTrendUp className='text-xl'/>} listTwo={'Programming'} listTwoIcon={<FaLaptopCode className='text-lg'/>} listThree={''} listThreeIcon={''} listFour={''} listFourIcon={''} listFive={''} listFiveIcon={''} listSix={''} listSixIcon={''} listSeven={''} listSevenIcon={''} listEight={''} listEightIcon={''}  hide={()=>setShowMega(0)}/>}
 
                  </li>
-                <li className={`${isScrolled ? "text-[#18455D]" : "text-white"} font-bold uppercase`}>Projects</li>
-                <li className={`${isScrolled ? "text-[#18455D]" : "text-white"} font-bold uppercase`}>Blogs</li>
-                <li className={`${isScrolled ? "text-[#18455D]" : "text-white"} font-bold uppercase`}>Contact</li>
+                
+                <li className={`${isScrolled ? "text-[#18455D]" : "text-white"} font-bold uppercase cursor-pointer`}onMouseEnter={()=>setShowMega(0)}>Projects</li>
+                
+                <li className={`${isScrolled ? "text-[#18455D]" : "text-white"} font-bold uppercase cursor-pointer`}onMouseEnter={()=>setShowMega(0)}>Contact</li>
                 
             </ul>
          </nav>

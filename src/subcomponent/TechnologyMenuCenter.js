@@ -22,45 +22,45 @@ const TechnologyMenuCenter = ({icon ,heading,subheading, listOneHeading, listTwo
         <div >
             <h3 className="text-xl capitalize pb-4" data-aos="zoom-in" data-aos-duration="400"> {listOneHeading}</h3>
             <ul className="grid grid-cols-2 gap-x-10 gap-y-2 ">
-                <li><Link className="mega-center-list" href={''} data-aos="zoom-in" data-aos-duration="400">
-                <p className="normal-case text-[#42545e] font-semibold">{consultServiceOne}</p>
+                <li data-aos="zoom-in" data-aos-duration="400"><Link className="mega-center-list" href={''} >
+                <p className="normal-case text-[#42545e] font-semibold whitespace-nowrap">{consultServiceOne}</p>
                 </Link></li>
 
-                <li><Link className="mega-center-list" href={''} data-aos="zoom-in" data-aos-duration="400" data-aos-delay="100">
-                <p className="normal-case text-[#42545e] font-semibold">{consultServiceTwo}</p>
+                <li data-aos="zoom-in" data-aos-duration="400" data-aos-delay="100"><Link className="mega-center-list" href={''} >
+                <p className="normal-case text-[#42545e] font-semibold  whitespace-nowrap">{consultServiceTwo}</p>
                 </Link></li>
 
-                <li><Link className="mega-center-list" href={''} data-aos="zoom-in" data-aos-duration="400" data-aos-delay="200">
-                <p className="normal-case text-[#42545e] font-semibold">{consultServiceThree}</p>
+                <li data-aos="zoom-in" data-aos-duration="400" data-aos-delay="200"><Link className="mega-center-list" href={''} >
+                <p className="normal-case text-[#42545e] font-semibold whitespace-nowrap">{consultServiceThree}</p>
                 
                 </Link></li>
 
-                <li><Link className="mega-center-list" href={''} data-aos="zoom-in" data-aos-duration="400" data-aos-delay="300">
-                <p className="normal-case text-[#42545e] font-semibold">{consultServiceFour}</p>
+                <li data-aos="zoom-in" data-aos-duration="400" data-aos-delay="300"><Link className="mega-center-list" href={''} >
+                <p className="normal-case text-[#42545e] font-semibold whitespace-nowrap">{consultServiceFour}</p>
                 </Link></li>
                 
-                <li><Link className="mega-center-list" href={''} data-aos="zoom-in" data-aos-duration="400" data-aos-delay="300">
-                <p className="normal-case text-[#42545e] font-semibold">{consultServiceFive}</p>
+                <li data-aos="zoom-in" data-aos-duration="400" data-aos-delay="400"><Link className="mega-center-list" href={''} >
+                <p className="normal-case text-[#42545e] font-semibold whitespace-nowrap">{consultServiceFive}</p>
                 </Link></li>
 
-                <li><Link className="mega-center-list" href={''} data-aos="zoom-in" data-aos-duration="400" data-aos-delay="300">
-                <p className="normal-case text-[#42545e] font-semibold">{consultServiceSix}</p>
+                <li data-aos="zoom-in" data-aos-duration="400" data-aos-delay="500"><Link className="mega-center-list" href={''} >
+                <p className="normal-case text-[#42545e] font-semibold whitespace-nowrap">{consultServiceSix}</p>
                 </Link></li>
 
-                <li><Link className="mega-center-list" href={''} data-aos="zoom-in" data-aos-duration="400" data-aos-delay="300">
-                <p className="normal-case text-[#42545e] font-semibold">{consultServiceSeven}</p>
+                <li data-aos="zoom-in" data-aos-duration="400" data-aos-delay="600"><Link className="mega-center-list" href={''} >
+                <p className="normal-case text-[#42545e] font-semibold whitespace-nowrap">{consultServiceSeven}</p>
                 </Link></li>
 
-                <li><Link className="mega-center-list" href={''} data-aos="zoom-in" data-aos-duration="400" data-aos-delay="300">
-                <p className="normal-case text-[#42545e] font-semibold">{consultServiceEight}</p>
+                <li data-aos="zoom-in" data-aos-duration="400" data-aos-delay="700"><Link className="mega-center-list" href={''} >
+                <p className="normal-case text-[#42545e] font-semibold whitespace-nowrap">{consultServiceEight}</p>
                 </Link></li>
 
-                <li><Link className="mega-center-list" href={''} data-aos="zoom-in" data-aos-duration="400" data-aos-delay="300">
-                <p className="normal-case text-[#42545e] font-semibold">{consultServiceNine}</p>
+                <li data-aos="zoom-in" data-aos-duration="400" data-aos-delay="800" ><Link className="mega-center-list" href={''} >
+                <p className="normal-case text-[#42545e] font-semibold whitespace-nowrap">{consultServiceNine}</p>
                 </Link></li>
 
-                <li><Link className="mega-center-list" href={''} data-aos="zoom-in" data-aos-duration="400" data-aos-delay="300">
-                <p className="normal-case text-[#42545e] font-semibold">{consultServiceTen}</p>
+                <li data-aos="zoom-in" data-aos-duration="400" data-aos-delay="900" ><Link className="mega-center-list" href={''} >
+                <p className="normal-case text-[#42545e] font-semibold whitespace-nowrap">{consultServiceTen}</p>
                 </Link></li>
 
             </ul>
@@ -68,34 +68,34 @@ const TechnologyMenuCenter = ({icon ,heading,subheading, listOneHeading, listTwo
         <div >
             <h3 className="text-xl capitalize pb-4" data-aos="zoom-in" data-aos-duration="400">{listTwoHeading}</h3>
             <ul className="grid grid-cols-2 gap-x-10 gap-y-2 ">
-                <li><Link className="mega-center-list" href={''} data-aos="zoom-in" data-aos-duration="400">
-                <p className="normal-case text-[#42545e] font-semibold">{DevelopmentServiceOne}</p>
+                <li data-aos="zoom-in" data-aos-duration="400"><Link className="mega-center-list" href={''} >
+                <p className="normal-case text-[#42545e] font-semibold whitespace-nowrap">{DevelopmentServiceOne}</p>
                 
                 </Link></li>
-                <li><Link className="mega-center-list" href={''} data-aos="zoom-in" data-aos-duration="400" data-aos-delay="100">
-                <p className="normal-case text-[#42545e]  font-semibold">{DevelopmentServiceTwo}</p>
+                <li data-aos="zoom-in" data-aos-duration="400" data-aos-delay="100"><Link className="mega-center-list" href={''} >
+                <p className="normal-case text-[#42545e]  font-semibold whitespace-nowrap">{DevelopmentServiceTwo}</p>
                 </Link></li>
-                <li><Link className="mega-center-list" href={''} data-aos="zoom-in" data-aos-duration="400" data-aos-delay="200">
-                <p className="normal-case text-[#42545e]  font-semibold">{DevelopmentServiceThree}</p>
+                <li data-aos="zoom-in" data-aos-duration="400" data-aos-delay="200"><Link className="mega-center-list" href={''} >
+                <p className="normal-case text-[#42545e]  font-semibold whitespace-nowrap">{DevelopmentServiceThree}</p>
                 </Link></li>
-                <li><Link className="mega-center-list" href={''} data-aos="zoom-in" data-aos-duration="400" data-aos-delay="300">
-                <p className="normal-case text-[#42545e]  font-semibold">{DevelopmentServiceFour}</p>
-                </Link></li>
-
-                <li><Link className="mega-center-list" href={''} data-aos="zoom-in" data-aos-duration="400" data-aos-delay="300">
-                <p className="normal-case text-[#42545e]  font-semibold">{DevelopmentServiceFive}</p>
+                <li data-aos="zoom-in" data-aos-duration="400" data-aos-delay="300"><Link className="mega-center-list" href={''} >
+                <p className="normal-case text-[#42545e]  font-semibold whitespace-nowrap">{DevelopmentServiceFour}</p>
                 </Link></li>
 
-                <li><Link className="mega-center-list" href={''} data-aos="zoom-in" data-aos-duration="400" data-aos-delay="300">
-                <p className="normal-case text-[#42545e]  font-semibold">{DevelopmentServiceSix}</p>
+                <li data-aos="zoom-in" data-aos-duration="400" data-aos-delay="400"><Link className="mega-center-list" href={''} >
+                <p className="normal-case text-[#42545e]  font-semibold whitespace-nowrap">{DevelopmentServiceFive}</p>
                 </Link></li>
 
-                <li><Link className="mega-center-list" href={''} data-aos="zoom-in" data-aos-duration="400" data-aos-delay="300">
-                <p className="normal-case text-[#42545e]  font-semibold">{DevelopmentServiceSeven}</p>
+                <li data-aos="zoom-in" data-aos-duration="400" data-aos-delay="500"><Link className="mega-center-list" href={''} >
+                <p className="normal-case text-[#42545e]  font-semibold whitespace-nowrap">{DevelopmentServiceSix}</p>
                 </Link></li>
 
-                <li><Link className="mega-center-list" href={''} data-aos="zoom-in" data-aos-duration="400" data-aos-delay="300">
-                <p className="normal-case text-[#42545e]  font-semibold">{DevelopmentServiceEight}</p>
+                <li data-aos="zoom-in" data-aos-duration="400" data-aos-delay="600"><Link className="mega-center-list" href={''} >
+                <p className="normal-case text-[#42545e]  font-semibold whitespace-nowrap">{DevelopmentServiceSeven}</p>
+                </Link></li>
+
+                <li data-aos="zoom-in" data-aos-duration="400" data-aos-delay="700"><Link className="mega-center-list" href={''} >
+                <p className="normal-case text-[#42545e]  font-semibold whitespace-nowrap">{DevelopmentServiceEight}</p>
                 </Link></li>
             </ul>
             </div>

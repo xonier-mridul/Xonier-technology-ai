@@ -26,7 +26,7 @@ import { SiGooglecloud } from "react-icons/si";
 
 const MegaMenu = ({listOne, listOneIcon, listTwo, listTwoIcon, listThree, listThreeIcon, listFour, listFourIcon, listFive, listFiveIcon, listSix, listSixIcon, listSeven, listSevenIcon, listEight, listEightIcon, hide}) => {
 
-   const [Active, setActive] = useState(2);
+   const [Active, setActive] = useState(1);
 
    const handleActive = (i)=>{
       setActive(i)
@@ -56,10 +56,11 @@ const MegaMenu = ({listOne, listOneIcon, listTwo, listTwoIcon, listThree, listTh
 
              <li className={`${Active === 7 && "bg-active"} mega-list p-3 flex items-center gap-3 w-full justify-between rounded-md text-[#18455D] capitalize `} onClick={()=>handleActive(7)}><span className='flex items-center gap-3'> {listSevenIcon} {listSeven} </span> <FaArrowRightLong className='mega-icon transition-all duration-500 text-white invisible'/></li>
 
-             <li className={`${Active === 8 && "bg-active"} mega-list p-3 flex items-center gap-3 w-full justify-between rounded-md text-[#18455D] capitalize `} onClick={()=>handleActive(8)}><span className='flex items-center gap-3'> {listEight} </span><FaArrowRightLong className='mega-icon transition-all duration-500 text-white invisible'/></li>
+             <li className={`${Active === 8 && "bg-active"} mega-list p-3 flex items-center gap-3 w-full justify-between rounded-md text-[#18455D] capitalize `} onClick={()=>handleActive(8)}><span className='flex items-center gap-3'>{listEightIcon} {listEight} </span><FaArrowRightLong className='mega-icon transition-all duration-500 text-white invisible'/></li>
            </ul>
            
            </div>
+           
            <div className="w-2/4 h-full py-5">
                
             {Active === 1 && <MegaMenuCenter icon={<GrCloudSoftware className="text-4xl text-red-500" />} heading={'Software Development'} subheading={'Innovative, future-proof software solutions'} listOneHeading={'Consulting'} listTwoHeading={'Development'} consultServiceOne={'Software Consulting'} consultServiceOnePara={'Expert advice on tech'} consultServiceTwo={'IT Consulting'} consultServiceTwoPara={'Expert IT solutions, delivered'} consultServiceThree={'Agile Consulting'} consultServiceThreePara={'Agile expertise, faster results'} consultServiceFour={'CRM Consulting'} consultServiceFourPara={'Optimizing Customers Relation'} DevelopmentServiceOne={'Custom Software'} DevelopmentServiceOnePara={'Tailored solutions for excellence'} DevelopmentServiceTwo={'Enterprise Software'}  DevelopmentServiceTwoPara={'Powering enterprise growth'} DevelopmentServiceThree={'Software Product Engineering '} DevelopmentServiceThreePara={'Building market ready software'} DevelopmentServiceFour={'Application Development'} DevelopmentServiceFourPara={'Transform idea into powerful apps'}/>}
