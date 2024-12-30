@@ -67,7 +67,7 @@ const Navbar = () => {
   
   return (
     <>
-    <div className={`${isScrolled? "bg-white shadow-[0_5px_14px_#00000016] ": "bg-transparent"} fixed w-full top-0 left-0 py-5 z-20 border-b-[1px] border-[#ffffff1a] `}>
+    <div className={`${isScrolled? "bg-white shadow-[0_5px_14px_#00000016] ": "bg-transparent"} fixed w-full top-0 left-0 py-5 z-30 border-b-[1px] border-[#ffffff1a] `}>
        <div className="max-w-7xl mx-auto  flex items-center ">
        <div className="w-[20%]" onMouseEnter={()=>setShowMega(0)}>
         
@@ -102,10 +102,9 @@ const Navbar = () => {
                 <li><Link className={`${isScrolled ? "text-[#18455D]" : "text-white"} font-bold uppercase`} href={'/'} onMouseEnter={()=>setShowMega(2)} >Technology </Link>
 
                 {showMega === 2 && <TechnologyMegaMenu listOne={'Trending & Platforms'} listOneIcon={<FaArrowTrendUp className='text-xl'/>} listTwo={'Programming'} listTwoIcon={<FaLaptopCode className='text-lg'/>} listThree={''} listThreeIcon={''} listFour={''} listFourIcon={''} listFive={''} listFiveIcon={''} listSix={''} listSixIcon={''} listSeven={''} listSevenIcon={''} listEight={''} listEightIcon={''}  hide={()=>setShowMega(0)}/>}
-
-                 </li>
+                </li>
                 
-                <li className={`${isScrolled ? "text-[#18455D]" : "text-white"} font-bold uppercase cursor-pointer`}onMouseEnter={()=>setShowMega(0)}>Projects</li>
+                <li onMouseEnter={()=>setShowMega(0)}> <Link href={'/case-studies'} className={`${isScrolled ? "text-[#18455D]" : "text-white"} font-bold uppercase cursor-pointer`}> Case Studies </Link> </li>
                 
                 <li className={`${isScrolled ? "text-[#18455D]" : "text-white"} font-bold uppercase cursor-pointer`}onMouseEnter={()=>setShowMega(0)}>Contact</li>
                 

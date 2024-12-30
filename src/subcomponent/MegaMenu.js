@@ -37,7 +37,7 @@ const MegaMenu = ({listOne, listOneIcon, listTwo, listTwoIcon, listThree, listTh
 
   return (
     <>
-      <div className='megamenus absolute top-0 w-[100vw] z-30 bg-white light-bg ' onMouseLeave={hide}>
+      <div className='megamenus absolute top-0 w-[100vw] z-40 bg-white light-bg ' onMouseLeave={hide}>
         <div className="max-w-7xl mx-auto flex items-start gap-6">
            <div className="w-1/4 megamenu-left py-5 pr-3">
            <ul className='flex flex-col gap-2'>

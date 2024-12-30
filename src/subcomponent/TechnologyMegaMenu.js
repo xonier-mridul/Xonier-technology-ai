@@ -39,7 +39,7 @@ const TechnologyMegaMenu = ({listOne, listOneIcon, listTwo, listTwoIcon, listThr
 
   return (
     <>
-      <div className='megamenus absolute top-0 w-[100vw] z-30 bg-white light-bg ' onMouseLeave={hide}>
+      <div className='megamenus absolute top-0 w-[100vw] z-40 bg-white light-bg ' onMouseLeave={hide}>
         <div className="max-w-7xl mx-auto flex items-start gap-6">
            <div className="w-1/4 megamenu-left py-5 pr-3 h-screen">
            <ul className='flex flex-col gap-2'>

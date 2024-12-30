@@ -81,6 +81,10 @@ body {
   animation: top-bottom 5s linear infinite;
 }
 
+.slick-track {
+  padding: 0 !important;
+}
+
 .bg-largeLine::before{
   content: "";
   position: absolute;
@@ -132,13 +136,15 @@ background-color: #DEDEDE;
 }
 
 .slider-container {
-  @apply mx-auto w-full ; /* Center the slider and limit its width */
+  @apply mx-auto w-full ; 
 }
 .image-wrapper {
-  @apply mx-auto rounded-lg shadow-lg; /* Center the image, add rounded corners and shadow */
+  @apply mx-auto rounded-lg shadow-lg; 
 }
 
-
+.flex{
+  display: flex !important;
+}
 
 .slick-track{
   padding:  28px 0 ;
@@ -328,10 +334,52 @@ background-color: #DEDEDE;
   height: 100vh;
 }
 
-/* .megamenu-center{
-  height: 100vh;
-  overflow-y: scroll;
-} */
+.page-banner{
+ 
+  background-position: center center;
+  background-size: cover;
+}
+
+.bg-case{
+  background:url('/CaseStudies.jpg');
+}
+
+.py-40 {
+  padding-top: 10rem /* 160px */;
+  padding-bottom: 10rem /* 160px */;
+}
+
+.page-banner-overlay{
+  height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+  background-color: transparent;
+    background-image: linear-gradient(-90deg, #02010100 0%, #0C3246 100%);
+    opacity: 0.8;
+    transition:  border-radius 0.3s, opacity 0.3s;
+}
+
+.page-banner ul{
+  background-color: #ffffff33;
+}
+
+.text-\[10px\] {
+  font-size: 10px;
+}
+
+.pt-48 {
+  padding-top: 12rem ;
+}
+
+.case-box:hover .case-overlay{
+  background: #00000050;
+}
+
+.case-box:hover .case-img{
+  transform: scale(1.5);
+}
 
 
 
