@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import UseCase from "@/apiss/UseCase";
+import UseCase from "@/subcomponent/UseCase";
 import axios from "axios";
 import Image from "next/image";
 import Link from "next/link";
