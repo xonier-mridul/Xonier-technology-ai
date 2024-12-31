@@ -48,14 +48,14 @@ const page = ({params}) => {
              </ul>
 
             </div>
-            <div className="w-[72%] flex flex-col gap-10">
-               <div id="industry">
+            <div className="w-[72%] flex flex-col ">
+               <div id="industry" className='pt-28 mt-[-100px]'>
                 <h3 className='text-3xl font-bold pb-5'>About </h3>
                 <p className='opacity-85 text-lg pb-4'>{e.about}</p>
                 <p className='opacity-90 text-lg text-red-500 font-medium'>  <b className='font-semibold text-xl text-[#18455D]'>Technologies: &nbsp;</b> {e.tech} </p>
 
                </div>
-               <div id="challenges">
+               <div id="challenges" className='pt-28 mt-[-40px]'>
                <h3 className='text-3xl font-bold pb-5'>Challenges </h3>
                <p className='opacity-85 text-lg pb-4'>{e.chalenges.description}</p>
                <div className='opacity-85 text-lg pb-4 flex flex-col gap-3'>{e.chalenges.chal.map((e,i)=>(
@@ -64,7 +64,7 @@ const page = ({params}) => {
                
                </div>
 
-               <div id="solutions">
+               <div id="solutions" className='pt-28 mt-[-40px]'>
                <h3 className='text-3xl font-bold pb-5'>Solutions</h3>
                <p className='opacity-85 text-lg pb-4'>{e.solutions.description}</p>
                <div className='opacity-85 text-lg pb-4 flex flex-col gap-3'>{e.solutions?.sel?.map((e,i)=>(
@@ -72,7 +72,7 @@ const page = ({params}) => {
                ))}</div>
                </div>
 
-               <div id="benefit">
+               <div id="benefit" className='pt-28 mt-[-40px]'>
                <h3 className='text-3xl font-bold pb-5'>Benefits</h3>
                <p className='opacity-85 text-lg pb-4'>{e.benefits}</p>
                </div>
