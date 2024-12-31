@@ -44,10 +44,9 @@ const CaseStudies = () => {
         {data.slice(0,showUseCase).map((item, index) => (
           <div
             className="case-box flex items-center w-full shadow-[0_0_50px_#00000015] hover:shadow-[0_0_40px_#00000030] transition-all duration-300 relative rounded-sm overflow-hidden"
-            key={item.id}
-          >
+            key={item.id} data-aos="zoom-in" data-aos-duration="500">
             <div className="w-1/2 h-[325px] relative overflow-hidden">
-              <div className="case-overlay absolute h-full w-full top-0 left-0 z-10 bg-[#00000000] transition-all duration-500"></div>
+              <div className="case-overlay absolute h-full w-full top-0 left-0 z-10 bg-[#00000015] transition-all duration-500"></div>
               <Image
                 className="case-img w-full h-full object-cover transition-all duration-500"
                 src={item.image}
@@ -72,7 +71,7 @@ const CaseStudies = () => {
               </p>
               <Link
                 className="px-8 py-[10px] bg-red-500 text-white"
-                href={item.link}>
+                href={`case-studies/${item.slug}`}>
                 Learn More
               </Link>
             </div>

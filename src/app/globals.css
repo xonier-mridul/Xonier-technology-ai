@@ -12,6 +12,10 @@ h1,h2,h3,h4,h5,h6{
   color: #18455D;
 }
 
+.html{
+  scroll-behavior: smooth;
+}
+
 .left-right{
   animation: left-right 5s linear infinite;
 }

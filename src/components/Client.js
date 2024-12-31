@@ -90,8 +90,8 @@ const Client = () => {
         <div className="flex justify-center items-center h-40">
         <Image
           src={'/chelsea-logo.png'}
-          width={150}
-          height={150}
+          width={120}
+          height={120}
           quality={100}
           alt="logos"
           />
@@ -202,8 +202,8 @@ const Client = () => {
         <div className="flex justify-center items-center h-40">
         <Image
           src={'/chelsea-logo.png'}
-          width={150}
-          height={150}
+          width={120}
+          height={120}
           quality={100}
           alt="logos"
           />

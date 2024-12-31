@@ -15,7 +15,7 @@ const PageBanner = ({title,img}) => {
         <div className="relative z-10 max-w-7xl mx-auto flex flex-col items-start justify-center gap-6 ">
 
             <h1 className='text-6xl text-white font-bold capitalize'>{title}</h1>
-            <ul className=' px-5 py-2 flex items-center gap-4'>
+            <ul className=' px-5 py-2  flex items-center gap-4'>
                 <li className='text-white flex items-center gap-2 text-lg font-medium hover:text-red-500 transition-all duration-300 cursor-pointer' onClick={()=>router.push('/')} > <IoMdHome className='text-xl '/> Home </li> 
 
                 <li><FaCircle className='text-[10px] text-red-500'/></li>
