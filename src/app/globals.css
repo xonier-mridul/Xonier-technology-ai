@@ -348,9 +348,20 @@ background-color: #DEDEDE;
   background:url('/CaseStudies.jpg');
 }
 
+.bg-contact{
+  background:url('/contact-banner.jpg');
+}
+
 .py-40 {
   padding-top: 10rem ;
   padding-bottom: 10rem ;
+}
+
+.contact-box:hover .contact-box-icon{
+   transform: translateY(-10px);
+   background-color: #EF4444;
+   color: white;
+   
 }
 
 .page-banner-overlay{

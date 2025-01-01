@@ -106,7 +106,7 @@ const Navbar = () => {
                 
                 <li onMouseEnter={()=>setShowMega(0)}> <Link href={'/case-studies'} className={`${isScrolled ? "text-[#18455D]" : "text-white"} font-bold uppercase cursor-pointer`}> Case Studies </Link> </li>
                 
-                <li className={`${isScrolled ? "text-[#18455D]" : "text-white"} font-bold uppercase cursor-pointer`}onMouseEnter={()=>setShowMega(0)}>Contact</li>
+                <li><Link className={`${isScrolled ? "text-[#18455D]" : "text-white"} font-bold uppercase cursor-pointer`}onMouseEnter={()=>setShowMega(0)} href={'/contact'}> Contact </Link></li>
                 
             </ul>
          </nav>
