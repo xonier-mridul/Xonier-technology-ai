@@ -28,7 +28,8 @@ const handleValue = (e)=>{
 }
   return (
     <>
-      <div className='max-w-7xl mx-auto pt-8 pb-20 flex gap-10 items-center'>
+    <div className='  '>
+      <div className='max-w-7xl mx-auto py-20 flex gap-10 items-center'>
         <div className='w-[38%] flex flex-col gap-4'>
             <SubHeading heading={'Contact Us'} pos={'start'}/>
             <h2 className='text-4xl font-bold text-cyan-900 pb-5'>Write Us Any Message</h2>
@@ -68,6 +69,7 @@ const handleValue = (e)=>{
                 <button disabled={formData.name === "" || formData.email === "" || formData.country === "" || formData.number === "" || formData.message === ""} className='uppercase text-white bg-red-500 py-3 px-8  font-medium flex items-center gap-3 tracking-[1px] disabled:bg-red-400' type='submit'>Send Query <FaArrowRightLong className='text-lg'/></button>
             </form>
         </div>
+      </div>
       </div>
     </>
   )
