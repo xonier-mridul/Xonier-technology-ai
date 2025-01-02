@@ -17,11 +17,11 @@ const Banner = () => {
         alt='shape'
         quality={100}
         />
-
         <div className="max-w-7xl mx-auto  flex flex-col justify-center items-center relative opacity-100 z-10">
-            <div className='text-red-500 tracking-[2px] uppercase text-[15px] text-lg font-bold pb-4'>Welcome to <span className='bg-largeLine relative inline-block pl-1 pr-1'> Xonier Technologies </span></div>
-            <h1 className='text-[88px] font-bold text-white text-center w-[80%] leading-none pb-12 capitalize opacity-100'>Execute your next big <span className='bg-line relative inline-block'>Business Idea</span></h1>
-            <Link  className='uppercase text-white bg-red-500 py-[14px] px-10  font-medium flex items-center gap-3 tracking-[1px]' href={'/'}>Get Started <FaArrowRightLong className='text-lg'/></Link>
+            <div className='text-red-500 tracking-[2px] uppercase text-[15px] text-lg font-bold pb-4' data-aos="fade-up" data-aos-duration="500" data-aos-delay="200">Welcome to <span className='bg-largeLine relative inline-block pl-1 pr-1'> Xonier Technologies </span></div>
+            <h1 className='text-[88px] font-bold text-white text-center w-[80%] leading-none pb-12 capitalize opacity-100 ' data-aos="fade-up" data-aos-duration="700" data-aos-delay="400">Execute your next big <span className='bg-line relative inline-block' >Business Idea</span></h1> 
+            <Link  className='uppercase text-white bg-red-500 py-[14px] px-10  font-medium flex items-center gap-3 tracking-[1px]' href={'/'} data-aos="fade-up" data-aos-duration="600" data-aos-delay="800">Get Started <FaArrowRightLong className='text-lg'/></Link>
+
         </div>
 
       </div>

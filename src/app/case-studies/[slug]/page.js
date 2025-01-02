@@ -9,13 +9,13 @@ import { SiOpensourcehardware } from "react-icons/si";
 import { AiOutlineSolution } from "react-icons/ai";
 import { FaClipboardCheck } from "react-icons/fa6";
 import Link from 'next/link';
+
 const page = ({params}) => {
 
   const newParams = React.use(params)
   
   const filteredData = UseCase.filter((e) => e.slug === newParams.slug);
   const router = useRouter();
-  console.log("hii bro", newParams.slug);
 
   return (
     <>

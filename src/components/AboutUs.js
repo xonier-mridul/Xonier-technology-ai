@@ -34,12 +34,12 @@ const AboutUs = () => {
           </div>
         </div>
         <div className="w-1/2 flex flex-col items-start gap-5">
-         <SubHeading heading="About Us" pos="start"/>
-         <h2 className='text-5xl font-black leading-tight'> Why Choose Xonier Technology</h2>
-         <p className='opacity-85  font-medium pb-8'>Xonier Technologies is a digital engineering services provider to emerging businesses that are seeking to transform operations, leveraging Open Source software, Mobile devices, and the public/private cloud.</p>
+         <SubHeading heading="About Us" pos="start" />
+         <h2 className='text-5xl font-black leading-tight' data-aos="fade-up" data-aos-duration="700" data-aos-delay="300"> Why Choose Xonier Technology</h2>
+         <p className='opacity-85  font-medium pb-8'  data-aos="fade-up" data-aos-duration="700" data-aos-delay="500">Xonier Technologies is a digital engineering services provider to emerging businesses that are seeking to transform operations, leveraging Open Source software, Mobile devices, and the public/private cloud.</p>
 
          <div className='grid grid-cols-2 gap-5'>
-            <div className='flex flex-col gap-3'>
+            <div className='flex flex-col gap-3' data-aos="zoom-in" data-aos-duration="800" >
               <div className='text-6xl text-[#18455D] font-semibold pb-6 relative w-fit'>
               <CountUp
               start={0}
@@ -52,7 +52,7 @@ const AboutUs = () => {
               <p className=' opacity-85 font-medium'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam repellat tempora omnis!</p>
 
             </div>
-            <div className='flex flex-col gap-3'>
+            <div className='flex flex-col gap-3' data-aos="zoom-in" data-aos-duration="800" data-aos-delay="300">
               <div className='text-6xl text-[#18455D] font-semibold pb-6 relative w-fit'>
               <CountUp
               start={0}

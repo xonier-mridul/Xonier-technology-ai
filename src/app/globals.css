@@ -364,6 +364,10 @@ background-color: #DEDEDE;
    
 }
 
+.bg-about{
+  background: url('/company-banner.jpg');
+}
+
 .page-banner-overlay{
   height: 100%;
     width: 100%;
@@ -396,7 +400,34 @@ background-color: #DEDEDE;
   transform: scale(1.5);
 }
 
+.choose-bg{
+  background: url('/why-choose-01.jpg');
+  background-position: center center;
+  background-size: cover;
+}
 
+.whychoose-bg{
+  background: url('/bg-07.png'), #0C3246;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+} 
+
+.work-process-bg{
+  background: url('/process-line.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.icon-box:hover .icon-box-svg{
+  color:#EF323A;
+}
+
+.strokes{
+  -webkit-text-stroke: 1px #ffffff;
+  -webkit-text-fill-color: transparent;
+}
 
 @keyframes left-right {
   0%{

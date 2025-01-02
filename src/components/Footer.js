@@ -5,7 +5,10 @@ import React from 'react'
 import { usePathname } from 'next/navigation'
 
 const Footer = () => {
-    const pathname = usePathname()
+    const pathname = usePathname();
+    
+    const date = new Date().getFullYear();
+
   return (
     <>
       <div className='w-full footer bg-[#0C3246]'>
@@ -52,7 +55,7 @@ const Footer = () => {
             </ul>
            </div>
            <div className='w-[35%] flex items-center justify-end'>
-            <p className='text-white'>Copyright &copy; 2025 &nbsp; | &nbsp; All Rights Reserved</p>
+            <p className='text-white'>Copyright &copy; {date} &nbsp; | &nbsp; All Rights Reserved</p>
            </div>
         </div>
       </div>

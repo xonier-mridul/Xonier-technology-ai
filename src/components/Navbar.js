@@ -103,6 +103,8 @@ const Navbar = () => {
 
                 {showMega === 2 && <TechnologyMegaMenu listOne={'Trending & Platforms'} listOneIcon={<FaArrowTrendUp className='text-xl'/>} listTwo={'Programming'} listTwoIcon={<FaLaptopCode className='text-lg'/>} listThree={''} listThreeIcon={''} listFour={''} listFourIcon={''} listFive={''} listFiveIcon={''} listSix={''} listSixIcon={''} listSeven={''} listSevenIcon={''} listEight={''} listEightIcon={''}  hide={()=>setShowMega(0)}/>}
                 </li>
+
+                <li className='relative' onMouseEnter={()=>setShowMega(0)}> <Link href={'/company'} className={`${isScrolled ? "text-[#18454D]" : " text-white"}  font-bold uppercase cursor-pointer`}> Company</Link> </li>
                 
                 <li onMouseEnter={()=>setShowMega(0)}> <Link href={'/case-studies'} className={`${isScrolled ? "text-[#18455D]" : "text-white"} font-bold uppercase cursor-pointer`}> Case Studies </Link> </li>
                 
