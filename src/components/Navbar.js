@@ -87,28 +87,28 @@ const Navbar = () => {
          <nav>
             <ul className='flex items-center gap-7 justify-end'>
                 
-                <li> <Link className={`${isScrolled ? "text-[#18455D]" :"text-white"} font-bold uppercase`} href={''} onMouseEnter={()=>setShowMega(1)}> Services </Link>
+                <li> <Link className={`${isScrolled ? "text-[#18455D]" :"text-white"} hover:text-[#ff4c4c]  duration-300 transition-all font-bold uppercase`} href={''} onMouseEnter={()=>setShowMega(1)}> Services </Link>
 
                 {showMega === 1 && <MegaMenu listOne={'Software Development'} listOneIcon={<GrCloudSoftware className='text-xl'/>} listTwo={'Application Development '} listTwoIcon={<MdOutlineDeveloperMode className='text-lg'/>} listThree={'Software Team'} listThreeIcon={<BsMicrosoftTeams className='text-xl'/>} listFour={'eCommerce'} listFourIcon={<FaCartPlus className='text-xl'/>} listFive={'QA and Testing'} listFiveIcon={<MdAutoGraph className='text-xl'/>} listSix={'Cloud Testing'} listSixIcon={<MdCloudDone className='text-xl'/>} listSeven={'Data Solution'} listSevenIcon={<BsDatabaseFillGear className='text-xl'/>} listEight={'AI & ML Solution'} listEightIcon={<FaBrain className='text-xl'/>} hide={()=>setShowMega(0)} />}
 
                 </li>
 
-                <li> <Link href={'/'} className={`${isScrolled ? "text-[#18455D]" : "text-white"} font-bold uppercase`} onMouseEnter={()=>setShowMega(3)}>Hire </Link>
+                <li> <Link href={'/'} className={`${isScrolled ? "text-[#18455D]" : "text-white"} font-bold uppercase hover:text-[#ff4c4c]  duration-300 transition-all`} onMouseEnter={()=>setShowMega(3)}>Hire </Link>
                   
                    {showMega === 3 && <HireMegaMenu listOneIcon={<FaCode className='text-lg'/>} listOne={'Backend'} listTwoIcon={<FaReact className='text-lg'/>} listTwo={'Frontend'} listThreeIcon={<FaBrain className='text-lg'/>} listThree={'AI/ML'} listFourIcon={<BsDatabaseFillGear className='text-lg'/>} listFour={'Data Solution'} listFiveIcon={<MdOutlineDeveloperMode className='text-xl'/>} listFive={'Mobile'} listSix={'Full Stack'} listSixIcon={<SiNextdotjs className='text-lg'/>} listSevenIcon={<FaDev className='text-lg'/>} listSeven={'DevOps'} listEightIcon={<FaWordpress className='text-lg'/>} listEight={'CMS'} hide={()=>setShowMega(0)}/> }
 
                 </li>
 
-                <li><Link className={`${isScrolled ? "text-[#18455D]" : "text-white"} font-bold uppercase`} href={'/'} onMouseEnter={()=>setShowMega(2)} >Technology </Link>
+                <li><Link className={`${isScrolled ? "text-[#18455D]" : "text-white"} font-bold uppercase hover:text-[#ff4c4c]  duration-300 transition-all`} href={'/'} onMouseEnter={()=>setShowMega(2)} >Technology </Link>
 
                 {showMega === 2 && <TechnologyMegaMenu listOne={'Trending & Platforms'} listOneIcon={<FaArrowTrendUp className='text-xl'/>} listTwo={'Programming'} listTwoIcon={<FaLaptopCode className='text-lg'/>} listThree={''} listThreeIcon={''} listFour={''} listFourIcon={''} listFive={''} listFiveIcon={''} listSix={''} listSixIcon={''} listSeven={''} listSevenIcon={''} listEight={''} listEightIcon={''}  hide={()=>setShowMega(0)}/>}
                 </li>
 
-                <li className='relative' onMouseEnter={()=>setShowMega(0)}> <Link href={'/company'} className={`${isScrolled ? "text-[#18454D]" : " text-white"} ${pathname === "/company" && "text-red-500"}  font-bold uppercase cursor-pointer`}> Company</Link> </li>
+                <li className='relative' onMouseEnter={()=>setShowMega(0)}> <Link href={'/company'} className={`${isScrolled ? "text-[#18454D]" : " text-white"} ${pathname === "/company" && "text-red-500"}  font-bold uppercase cursor-pointer hover:text-[#ff4c4c]  duration-300 transition-all`}> Company</Link> </li>
                 
-                <li onMouseEnter={()=>setShowMega(0)}> <Link href={'/case-studies'} className={`${isScrolled ? "text-[#18455D]" : "text-white"} ${pathname === "/case-studies" && "text-red-500"} font-bold uppercase cursor-pointer`}> Case Studies </Link> </li>
+                <li onMouseEnter={()=>setShowMega(0)}> <Link href={'/case-studies'} className={`${isScrolled ? "text-[#18455D]" : "text-white"} ${pathname === "/case-studies" && "text-red-500"} font-bold uppercase cursor-pointer hover:text-[#ff4c4c]  duration-300 transition-all`}> Case Studies </Link> </li>
                 
-                <li><Link className={`${isScrolled ? "text-[#18455D]" : "text-white"} ${pathname === "/contact" && "text-red-500"} font-bold uppercase cursor-pointer`}onMouseEnter={()=>setShowMega(0)} href={'/contact'}> Contact </Link></li>
+                <li><Link className={`${isScrolled ? "text-[#18455D]" : "text-white"} ${pathname === "/contact" && "text-red-500"} font-bold uppercase cursor-pointer hover:text-[#ff4c4c] duration-300 transition-all`}onMouseEnter={()=>setShowMega(0)} href={'/contact'}> Contact </Link></li>
                 
             </ul>
          </nav>
