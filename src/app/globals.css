@@ -429,6 +429,10 @@ background-color: #DEDEDE;
   -webkit-text-fill-color: transparent;
 }
 
+.step-back:hover .step-back-icon{
+  transform: translateX(-12px);
+}
+
 @keyframes left-right {
   0%{
     transform:  translateX(0);

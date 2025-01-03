@@ -9,6 +9,9 @@ import { SiOpensourcehardware } from "react-icons/si";
 import { AiOutlineSolution } from "react-icons/ai";
 import { FaClipboardCheck } from "react-icons/fa6";
 import Link from 'next/link';
+import RecentCaseStudies from '@/components/RecentCaseStudies';
+import { FaAngleLeft } from "react-icons/fa6";
+
 
 const page = ({params}) => {
 
@@ -50,7 +53,7 @@ const page = ({params}) => {
             </div>
             <div className="w-[72%] flex flex-col ">
                <div id="industry" className='pt-28 mt-[-100px]'>
-                <h3 className='text-3xl font-bold pb-5'>About </h3>
+                <h3 className='text-3xl font-bold pb-5'> Industry </h3>
                 <p className='opacity-85 text-lg pb-4'>{e.about}</p>
                 <p className='opacity-90 text-lg text-red-500 font-medium'>  <b className='font-semibold text-xl text-[#18455D]'>Technologies: &nbsp;</b> {e.tech} </p>
 
@@ -75,12 +78,18 @@ const page = ({params}) => {
                <div id="benefit" className='pt-28 mt-[-60px]'>
                <h3 className='text-3xl font-bold pb-5'>Benefits</h3>
                <p className='opacity-85 text-lg pb-4'>{e.benefits}</p>
+
                </div>
-            
+               <div className='flex items-center justify-end pt-10'>
+              <Link className='step-back text-red-500 text-lg font-medium flex items-center gap-2 underline ' href={'/case-studies'}> <FaAngleLeft className='text-xl step-back-icon transition-all duration-500'/> Step back to case studies page</Link>
+
+               </div>
             </div>
 
         </div>
+       
         </div>
+        <RecentCaseStudies/>
         </>
       ))
       }

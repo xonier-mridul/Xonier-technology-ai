@@ -37,7 +37,7 @@ const handleValue = (e)=>{
 }
   return (
     <>
-    <div className='  '>
+    <div className='overflow-hidden'>
       <div className='max-w-7xl mx-auto py-20 flex gap-10 items-center'>
         <div className='w-[38%] flex flex-col gap-4'>
             <SubHeading heading={'Contact Us'} pos={'start'}/>
@@ -75,7 +75,7 @@ const handleValue = (e)=>{
                     <label htmlFor="message">Enquiry Details</label>
                     <textarea className='border-[1px] p-3 border-[#dee2e6] w-full focus-visible:border-[1px] focus-visible:border-red-500 outline-none transition-all' name="message" id="message" placeholder='Message' value={formData.message} onChange={(e)=>handleValue(e)} rows={5 }></textarea>
                 </div>
-                <button disabled={formData.name === "" || formData.email === "" || formData.country === "" || formData.number === "" || formData.message === ""} className='uppercase text-white bg-red-500 py-3 px-8  font-medium flex items-center gap-3 tracking-[1px] disabled:bg-red-400' type='submit' data-aos="zoom-out-up" data-aos-duration="1000" data-aos-delay="800">Send Query <FaArrowRightLong className='text-lg'/></button>
+                <button disabled={formData.name === "" || formData.email === "" || formData.country === "" || formData.number === "" || formData.message === ""} className='uppercase text-white bg-red-500 py-3 px-8  font-medium flex items-center gap-3 tracking-[1px] disabled:bg-red-400' type='submit' data-aos="zoom-out-up" data-aos-duration="1000" data-aos-delay="500">Send Query <FaArrowRightLong className='text-lg'/></button>
             </form>
         </div>
       </div>

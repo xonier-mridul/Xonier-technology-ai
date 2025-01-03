@@ -32,8 +32,8 @@ const Footer = () => {
                 <p className='text-white opacity-60'>H-161, Office No: 202, Second Floor, H Block, Sector 63, Noida</p>
                 </div>
                 <div className='flex flex-col gap-3'>
-                <h4 className='uppercase text-white font-semibold -tracking-tight text-[15px]'>sales office</h4>
-                <p className='text-white opacity-60'>H-187, Office No: 1.2, First Floor, H Block, Sector 63, Noida</p>
+                {/* <h4 className='uppercase text-white font-semibold -tracking-tight text-[15px]'>sales office</h4>
+                <p className='text-white opacity-60'>H-187, Office No: 1.2, First Floor, H Block, Sector 63, Noida</p> */}
                 </div>
                 <div></div>
                 <div className='flex flex-col'>

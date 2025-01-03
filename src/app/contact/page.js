@@ -8,8 +8,8 @@ const page = () => {
   return (
     <>
     <PageBanner title={'Contact Xonier Technologies'} img={'contact'}/>
-    <ContactInfoBox/>
     <ContactForm/>
+    <ContactInfoBox/>
       <Maps/>
     </>
   )

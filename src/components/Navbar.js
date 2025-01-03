@@ -32,7 +32,6 @@ const Navbar = () => {
 
 
   // useEffect(() => {
-   
   //   const handleScroll = () => {
   //     const scroll = window.scrollY;
   //     setIsScrolled(scroll !== 0);
