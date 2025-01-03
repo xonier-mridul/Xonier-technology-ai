@@ -31,26 +31,26 @@ const Navbar = () => {
   const [showMega, setShowMega] = useState(0);
 
 
-  useEffect(() => {
+  // useEffect(() => {
    
-    const handleScroll = () => {
-      const scroll = window.scrollY;
-      setIsScrolled(scroll !== 0);
-    };
+  //   const handleScroll = () => {
+  //     const scroll = window.scrollY;
+  //     setIsScrolled(scroll !== 0);
+  //   };
 
-    if (showMega > 0) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "";
-    }
+  //   if (showMega > 0) {
+  //     document.body.style.overflow = "hidden";
+  //   } else {
+  //     document.body.style.overflow = "";
+  //   }
 
-    document.addEventListener("scroll", handleScroll);
-    return () => {
-      document.removeEventListener("scroll", handleScroll);
-      document.body.style.overflow = "";
+  //   document.addEventListener("scroll", handleScroll);
+  //   return () => {
+  //     document.removeEventListener("scroll", handleScroll);
+  //     document.body.style.overflow = "";
       
-    };
-  }, [showMega]);
+  //   };
+  // }, [showMega]);
 
 
   useEffect(() => {
@@ -67,7 +67,7 @@ const Navbar = () => {
   
   return (
     <>
-    <div className={`${isScrolled? "bg-white shadow-[0_5px_14px_#00000016] ": "bg-transparent"} fixed w-full top-0 left-0 py-5 z-30 border-b-[1px] border-[#ffffff1a] `}>
+    <div className={`${isScrolled? "bg-white shadow-[0_5px_14px_#00000016] " : "bg-transparent"} fixed w-full top-0 left-0 py-5 z-30 border-b-[1px] border-[#ffffff1a]`}>
        <div className="max-w-7xl mx-auto  flex items-center ">
        <div className="w-[20%]" onMouseEnter={()=>setShowMega(0)}>
         
@@ -104,11 +104,11 @@ const Navbar = () => {
                 {showMega === 2 && <TechnologyMegaMenu listOne={'Trending & Platforms'} listOneIcon={<FaArrowTrendUp className='text-xl'/>} listTwo={'Programming'} listTwoIcon={<FaLaptopCode className='text-lg'/>} listThree={''} listThreeIcon={''} listFour={''} listFourIcon={''} listFive={''} listFiveIcon={''} listSix={''} listSixIcon={''} listSeven={''} listSevenIcon={''} listEight={''} listEightIcon={''}  hide={()=>setShowMega(0)}/>}
                 </li>
 
-                <li className='relative' onMouseEnter={()=>setShowMega(0)}> <Link href={'/company'} className={`${isScrolled ? "text-[#18454D]" : " text-white"}  font-bold uppercase cursor-pointer`}> Company</Link> </li>
+                <li className='relative' onMouseEnter={()=>setShowMega(0)}> <Link href={'/company'} className={`${isScrolled ? "text-[#18454D]" : " text-white"} ${pathname === "/company" && "text-red-500"}  font-bold uppercase cursor-pointer`}> Company</Link> </li>
                 
-                <li onMouseEnter={()=>setShowMega(0)}> <Link href={'/case-studies'} className={`${isScrolled ? "text-[#18455D]" : "text-white"} font-bold uppercase cursor-pointer`}> Case Studies </Link> </li>
+                <li onMouseEnter={()=>setShowMega(0)}> <Link href={'/case-studies'} className={`${isScrolled ? "text-[#18455D]" : "text-white"} ${pathname === "/case-studies" && "text-red-500"} font-bold uppercase cursor-pointer`}> Case Studies </Link> </li>
                 
-                <li><Link className={`${isScrolled ? "text-[#18455D]" : "text-white"} font-bold uppercase cursor-pointer`}onMouseEnter={()=>setShowMega(0)} href={'/contact'}> Contact </Link></li>
+                <li><Link className={`${isScrolled ? "text-[#18455D]" : "text-white"} ${pathname === "/contact" && "text-red-500"} font-bold uppercase cursor-pointer`}onMouseEnter={()=>setShowMega(0)} href={'/contact'}> Contact </Link></li>
                 
             </ul>
          </nav>

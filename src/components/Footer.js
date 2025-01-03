@@ -38,7 +38,7 @@ const Footer = () => {
                 <div></div>
                 <div className='flex flex-col'>
                     <Link className='text-white font-medium text-2xl border-b-[1px] pb-3 border-[#ffffff70 hover:text-red-500 duration-500 transition-all' href={'mailto:mailto:sales@xoniertech.com'}>sales@xoniertech.com</Link>
-                    <Link  className='text-white font-medium text-2xl  pt-2 border-[#ffffff70] hover:text-red-500 duration-500 transition-all' href={'tel:(+1) 347-580-8770'}>(+1) 347-580-8770</Link>
+                    <Link  className='text-white font-medium text-2xl  pt-2 border-[#ffffff70] hover:text-red-500 duration-500 transition-all' href={'tel:+91 87009 14459'}>(+91) 87009 14459</Link>
                 </div>
             
             </div>
@@ -48,10 +48,10 @@ const Footer = () => {
            <ul className='flex items-center justify-between'>
                 <li ><Link href={"/"} className={`${pathname === "/" ? "text-red-500" : "text-white hover:text-red-500 transition-all duration-300 cursor-pointer "} font-bold uppercase`}>Home</Link></li>
                 <li className={`${pathname === "/about" ? "text-red-500" : "text-white hover:text-red-500 transition-all duration-300 cursor-pointer"} font-bold uppercase`}>About Us</li>
-                <li className={`${pathname === "/services" ? "text-red-500" : "text-white hover:text-red-500 transition-all duration-300 cursor-pointer"} text-white font-bold uppercase`}>Services</li>
-                <li className={`${pathname === "/project" ? "text-red-500" : "text-white hover:text-red-500 transition-all duration-300 cursor-pointer"} text-white font-bold uppercase`}>Projects</li>
-                <li className={`${pathname === "/blog" ? "text-red-500" : "text-white hover:text-red-500 transition-all duration-300 cursor-pointer"} text-white font-bold uppercase`}>Blogs</li>
-                <li className={`${pathname === "/contact" ? "text-red-500" : "text-white hover:text-red-500 transition-all duration-300 cursor-pointer"} text-white font-bold uppercase`}>Contact</li>
+                <li className={`${pathname === "/services" ? "text-red-500" : "text-white hover:text-red-500 transition-all duration-300 cursor-pointer"}  font-bold uppercase`}>Services</li>
+                <li ><Link href={'/company'} className={`${pathname === "/company" ? "text-red-500" : "text-white hover:text-red-500 transition-all duration-300 cursor-pointer"}  font-bold uppercase`}> Company </Link> </li>
+                <li ><Link href={'/case-studies'} className={`${pathname === "/case-studies" ? "text-red-500" : "text-white hover:text-red-500 transition-all duration-300 cursor-pointer"}  font-bold uppercase`}>Case Studies</Link> </li>
+                <li ><Link href={'/contact'} className={`${pathname === "/contact" ? "text-red-500" : "text-white hover:text-red-500 transition-all duration-300 cursor-pointer"}  font-bold uppercase`}> Contact </Link></li>
             </ul>
            </div>
            <div className='w-[35%] flex items-center justify-end'>

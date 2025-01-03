@@ -11,11 +11,11 @@ const Team = () => {
       <div className='max-w-7xl mx-auto py-20'>
          <div className='flex flex-col gap-3 items-center justify-center pb-20'>
             <SubHeading heading={'Our team'} pos={'center'}/>
-            <h2 className='text-5xl font-black leading-tight capitalize'>Our motivated team</h2>
+            <h2 className='text-5xl font-black leading-tight capitalize' data-aos="fade-up" data-aos-duration="1000">Our motivated team</h2>
 
          </div>
          <div className='grid grid-cols-3 gap-10 items-center w-full'>
-            <div className='team-container cursor-pointer flex flex-col justify-center items-center'>
+            <div className='team-container cursor-pointer flex flex-col justify-center items-center' data-aos="fade-up" data-aos-duration="1000" >
 
                 <Image
                 className='w-[375px] team-img transition-all duration-300'
@@ -34,7 +34,7 @@ const Team = () => {
                     </ul>
                 </div>
             </div>
-            <div className='team-container cursor-pointer flex flex-col justify-center items-center'>
+            <div className='team-container cursor-pointer flex flex-col justify-center items-center' data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
 
                 <Image
                 className='w-[375px] team-img transition-all duration-300'
@@ -52,7 +52,7 @@ const Team = () => {
                     </ul>
                 </div>
             </div>
-            <div className='team-container cursor-pointer flex flex-col justify-center items-center'>
+            <div className='team-container cursor-pointer flex flex-col justify-center items-center' data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
 
                 <Image
                 className='w-[375px] team-img transition-all duration-300'

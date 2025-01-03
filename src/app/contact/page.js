@@ -16,3 +16,9 @@ const page = () => {
 }
 
 export default page
+
+export const metadata = {
+  title: "Contact - Connect with Xonier Technologies",
+  description: "Contact us for more information, Xonier Technology",
+};
+

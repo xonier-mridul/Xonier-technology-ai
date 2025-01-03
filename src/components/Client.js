@@ -42,7 +42,7 @@ const Client = () => {
         </div>
         <div className="w-full ">
         <Slider {...settings1}>
-        <div className="flex justify-center items-center h-40">
+        <div className="flex justify-center items-center h-40" data-aos="zoom-out-down" data-aos-duration="1000" >
           <Image
           src={'/last-logo.png'}
           width={150}
@@ -51,7 +51,7 @@ const Client = () => {
           alt="logos"
           />
         </div>
-        <div className="flex justify-center items-center h-40">
+        <div className="flex justify-center items-center h-40" data-aos="zoom-out-down" data-aos-duration="1000" data-aos-delay="200">
         <Image
           src={'/goalster-logo.png'}
           width={100}
@@ -60,7 +60,7 @@ const Client = () => {
           alt="logos"
           />
         </div>
-        <div className="flex justify-center items-center h-40">
+        <div className="flex justify-center items-center h-40" data-aos="zoom-out-down" data-aos-duration="1000" data-aos-delay="400">
         <Image
           src={'/alhokair-logo.png'}
           width={150}
@@ -69,7 +69,7 @@ const Client = () => {
           alt="logos"
           />
         </div>
-        <div className="flex justify-center items-center h-40">
+        <div className="flex justify-center items-center h-40" data-aos="zoom-out-down" data-aos-duration="1000" data-aos-delay="600">
         <Image
           src={'/pharma-logo.png'}
           width={150}
@@ -78,7 +78,7 @@ const Client = () => {
           alt="logos"
           />
         </div>
-        <div className="flex justify-center items-center h-40">
+        <div className="flex justify-center items-center h-40" data-aos="zoom-out-down" data-aos-duration="1000" data-aos-delay="800">
         <Image
           src={'/wecare-logo.png'}
           width={150}
@@ -87,7 +87,7 @@ const Client = () => {
           alt="logos"
           />
         </div>
-        <div className="flex justify-center items-center h-40">
+        <div className="flex justify-center items-center h-40" data-aos="zoom-out-down" data-aos-duration="1000" data-aos-delay="1000">
         <Image
           src={'/chelsea-logo.png'}
           width={120}
@@ -98,7 +98,7 @@ const Client = () => {
         </div>
       </Slider>
         <Slider {...settings2}>
-        <div  className="flex justify-center items-center h-40">
+        <div  className="flex justify-center items-center h-40" data-aos="zoom-out-down" data-aos-duration="1000" >
         <Image
           src={'/altius-logo.png'}
           width={150}
@@ -107,7 +107,7 @@ const Client = () => {
           alt="logos"
           />
         </div >
-        <div className="flex justify-center items-center h-40">
+        <div className="flex justify-center items-center h-40 " data-aos="zoom-out-down" data-aos-duration="1000" data-aos-delay="200">
         <Image
           src={'/target-logo.png'}
           width={150}
@@ -116,7 +116,7 @@ const Client = () => {
           alt="logos"
           />
         </div>
-        <div className="flex justify-center items-center h-40">
+        <div className="flex justify-center items-center h-40" data-aos="zoom-out-down" data-aos-duration="1000" data-aos-delay="400">
         <Image
           src={'/aaxel-logo.png'}
           width={150}
@@ -125,7 +125,7 @@ const Client = () => {
           alt="logos"
           />
         </div>
-        <div className="flex justify-center items-center h-40">
+        <div className="flex justify-center items-center h-40" data-aos="zoom-out-down" data-aos-duration="1000" data-aos-delay="600">
         <Image
           src={'/one-logo.png'}
           width={150}
@@ -134,7 +134,7 @@ const Client = () => {
           alt="logos"
           />
         </div>
-        <div className="flex justify-center items-center h-40">
+        <div className="flex justify-center items-center h-40" data-aos="zoom-out-down" data-aos-duration="1000" data-aos-delay="800">
         <Image
           src={'/ethio-logo.png'}
           width={150}
@@ -143,7 +143,7 @@ const Client = () => {
           alt="logos"
           />
         </div>
-        <div className="flex justify-center items-center h-40">
+        <div className="flex justify-center items-center h-40" data-aos="zoom-out-down" data-aos-duration="1000" data-aos-delay="1000">
         <Image
           src={'/memz.png'}
           width={150}
@@ -154,7 +154,7 @@ const Client = () => {
         </div>
       </Slider>
       <Slider {...settings1}>
-        <div className="flex justify-center items-center h-40">
+        <div className="flex justify-center items-center h-40" data-aos="zoom-out-down" data-aos-duration="1000" >
           <Image
           src={'/sejel-logo.png'}
           width={150}
@@ -163,7 +163,7 @@ const Client = () => {
           alt="logos"
           />
         </div>
-        <div className="flex justify-center items-center h-40">
+        <div className="flex justify-center items-center h-40" data-aos="zoom-out-down" data-aos-duration="1000" data-aos-delay="200">
         <Image
           src={'/ison-logo.png'}
           width={100}
@@ -172,7 +172,7 @@ const Client = () => {
           alt="logos"
           />
         </div>
-        <div className="flex justify-center items-center h-40">
+        <div className="flex justify-center items-center h-40" data-aos="zoom-out-down" data-aos-duration="1000" data-aos-delay="400">
         <Image
           src={'/alhokair-logo.png'}
           width={150}
@@ -181,7 +181,7 @@ const Client = () => {
           alt="logos"
           />
         </div>
-        <div className="flex justify-center items-center h-40">
+        <div className="flex justify-center items-center h-40" data-aos="zoom-out-down" data-aos-duration="1000" data-aos-delay="600">
         <Image
           src={'/pharma-logo.png'}
           width={150}
@@ -190,7 +190,7 @@ const Client = () => {
           alt="logos"
           />
         </div>
-        <div className="flex justify-center items-center h-40">
+        <div className="flex justify-center items-center h-40" data-aos="zoom-out-down" data-aos-duration="1000" data-aos-delay="800">
         <Image
           src={'/wecare-logo.png'}
           width={150}
@@ -199,7 +199,7 @@ const Client = () => {
           alt="logos"
           />
         </div>
-        <div className="flex justify-center items-center h-40">
+        <div className="flex justify-center items-center h-40" data-aos="zoom-out-down" data-aos-duration="1000" data-aos-delay="1000">
         <Image
           src={'/chelsea-logo.png'}
           width={120}

@@ -34,7 +34,7 @@ const CaseStudies = () => {
       <div className="max-w-7xl mx-auto py-20">
       <div className='flex flex-col gap-3 items-center justify-center pb-14'>
             <SubHeading heading={'Our Case studies'} pos={'center'}/>
-            <h2 className='text-5xl font-black leading-tight capitalize'>Our Success Stories</h2>
+            <h2 className='text-5xl font-black leading-tight capitalize' data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">Our Success Stories</h2>
 
          </div>
         <div className=" grid grid-cols-2 gap-8 items-center pb-16">
@@ -44,7 +44,7 @@ const CaseStudies = () => {
         {data.slice(0,showUseCase).map((item, index) => (
           <div
             className="case-box flex items-center w-full shadow-[0_0_50px_#00000015] hover:shadow-[0_0_40px_#00000030] transition-all duration-300 relative rounded-sm overflow-hidden"
-            key={item.id} data-aos="zoom-in" data-aos-duration="500">
+            key={item.id} data-aos="zoom-in" data-aos-duration="1000">
             <div className="w-1/2 h-[325px] relative overflow-hidden">
               <div className="case-overlay absolute h-full w-full top-0 left-0 z-10 bg-[#00000015] transition-all duration-500"></div>
               <Image
@@ -81,7 +81,7 @@ const CaseStudies = () => {
       </div>
       
       <div className="flex items-center justify-center w-full">
-              <button type="button" className="uppercase text-white bg-red-500 py-3 px-8  font-medium flex items-center gap-3 tracking-[1px]" onClick={handleShow}> Show More <FaArrowRightLong className='text-lg'/></button>
+              <button type="button" className="uppercase text-white bg-red-500 py-3 px-8  font-medium flex items-center gap-3 tracking-[1px]" onClick={handleShow} data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"> Show More <FaArrowRightLong className='text-lg'/></button>
         </div>
         </div>
     </>

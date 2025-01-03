@@ -18,3 +18,9 @@ const page = () => {
 }
 
 export default page
+
+export const metadata = {
+  title: "About Company - Empowering visions at Xonier Technology",
+  description: "",
+};
+

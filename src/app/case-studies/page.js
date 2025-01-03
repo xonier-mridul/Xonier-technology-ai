@@ -16,3 +16,9 @@ const page = () => {
 }
 
 export default page
+
+export const metadata = {
+  title: "Case Study - Realizing Success Stories with Xonier",
+  description: "",
+};
+

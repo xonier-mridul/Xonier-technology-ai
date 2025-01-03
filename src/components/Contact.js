@@ -1,5 +1,5 @@
-"use client"
-import React,{useEffect, useState} from 'react'
+
+import React from 'react'
 import Link from 'next/link'
 import { FaRegEnvelope } from "react-icons/fa";
 import { FaPhoneAlt } from "react-icons/fa";
@@ -10,15 +10,6 @@ import { FaInstagram } from "react-icons/fa";
 
 const Contact = () => {
     
-    const [contactData, setcontactData] = useState({
-        name:"",
-        
-})
-   
-   const handleSubmit = (e)=> {
-       let [name,value] = e.target
-       setcontactData()
-   }
 
 
   return (
@@ -32,7 +23,7 @@ const Contact = () => {
         <div className="max-w-7xl mx-auto flex items-center h-full">
             <div className="w-1/2"></div>
             <div className="w-1/2 relative z-10  ">
-            <div className='p-14 bg-[#ffffffcf] '>
+            <div className='p-14 bg-[#ffffffcf] ' data-aos="fade-left" data-aos-duration="1000">
                <h2 className='text-4xl font-black pb-3 opacity-100'>Contact Us</h2>
                <p className='text-lg font-medium text-[#18455D] pb-6 opacity-100'> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum, atque!</p>
                <ul className='flex flex-col gap-4 pb-6'>
