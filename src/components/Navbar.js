@@ -84,7 +84,7 @@ const Navbar = () => {
         /> </Link>}
        </div>
        <div className="w-[55%]">
-         <nav>
+         <nav >
             <ul className='flex items-center gap-7 justify-end'>
                 
                 <li> <Link className={`${isScrolled ? "text-[#18455D]" :"text-white"} font-bold uppercase`} href={''} onMouseEnter={()=>setShowMega(1)}> Services </Link>

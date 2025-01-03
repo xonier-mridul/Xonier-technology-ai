@@ -1,4 +1,3 @@
-
 import React from 'react'
 import Link from 'next/link'
 import { FaRegEnvelope } from "react-icons/fa";
@@ -10,19 +9,16 @@ import { FaInstagram } from "react-icons/fa";
 
 const Contact = () => {
     
-
-
   return (
     <>
-      <div className='w-full py-20 contact-bg relative overflow-hidden'>
+      <div className='w-full py-24 contact-bg relative overflow-hidden'>
       <video className='w-full absolute top-0 left-0' width="320" height="320" autoPlay loop controls >
       <source className='w-full h-[500px] inline-block'  src="/brain-ai.mp4" type="video/mp4" />
-      
       Your browser does not support the video tag.
-    </video>
+      </video>
         <div className="max-w-7xl mx-auto flex items-center h-full">
             <div className="w-1/2"></div>
-            <div className="w-1/2 relative z-10  ">
+            <div className="w-1/2 relative z-10">
             <div className='p-14 bg-[#ffffffcf] ' data-aos="fade-left" data-aos-duration="1000">
                <h2 className='text-4xl font-black pb-3 opacity-100'>Contact Us</h2>
                <p className='text-lg font-medium text-[#18455D] pb-6 opacity-100'> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum, atque!</p>
