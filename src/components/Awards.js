@@ -9,7 +9,7 @@ const Awards = () => {
         <div className='max-w-7xl mx-auto flex flex-col items-center'>
         <div className='flex flex-col gap-3 items-center justify-center pb-12'>
             <SubHeading heading={'Our Achievements'} pos={'center'}/>
-            <h2 className='text-5xl font-black leading-tight capitalize'>Our Awards And Recognition</h2>
+            <h2 className='text-5xl font-black leading-tight capitalize' data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">Our Awards And Recognition</h2>
          </div>
          <div className='grid-cols-7 w-full grid items-center justify-center mx-auto p-5 py-7 bg-cyan-950 mb-12'>
             <div  data-aos="fade-down" data-aos-duration="500">
@@ -71,7 +71,7 @@ const Awards = () => {
             </div>
 
          </div>
-         <p className='w-3/4 text-center text-lg text-[#42545e] font-medium'>With over 14+ years of industry experience, our CEO brings a wealth of expertise and leadership to ensure timely and efficient project execution. Get In Touch</p>
+         <p className='w-3/4 text-center text-lg text-[#42545e] font-medium' data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">With over 14+ years of industry experience, our CEO brings a wealth of expertise and leadership to ensure timely and efficient project execution. Get In Touch</p>
         </div>
       </div>
     </>

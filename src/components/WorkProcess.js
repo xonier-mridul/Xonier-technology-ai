@@ -16,7 +16,7 @@ const WorkProcess = () => {
     <div className="max-w-7xl mx-auto py-20">
       <div className="flex flex-col gap-3 items-center justify-center pb-14">
         <SubHeading heading={"Developers with Technology"} pos={"center"} />
-        <h2 className="text-5xl font-black leading-tight capitalize">
+        <h2 className="text-5xl font-black leading-tight capitalize"data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
           Our Working Process
         </h2>
       </div>
