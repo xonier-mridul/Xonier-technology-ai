@@ -9,7 +9,7 @@ const ContactInfoBox = () => {
     <>
     <div className='bg-[#f8f9fb] py-20 '>
     <div className='max-w-7xl mx-auto grid grid-cols-3 items-start'>
-        <div className='flex gap-5 contact-box'>
+        <div className='flex gap-5 contact-box' data-aos="zoom-in" data-aos-duration="1000">
             <div className='contact-box-icon transition-all duration-300 bg-white h-16 w-16 rounded-full flex items-center justify-center shadow-lg text-red-500'> <CiMobile3 className='text-4xl'/></div>
             <div className='flex flex-col gap-2'>
                 <h3 className='font-black text-cyan-900 text-xl'>Phone Number</h3>
@@ -20,7 +20,7 @@ const ContactInfoBox = () => {
         </div>
 
         </div>
-        <div className='flex gap-5 contact-box'>
+        <div className='flex gap-5 contact-box' data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="250">
             <div className='contact-box-icon transition-all duration-300 bg-white h-16 w-16 rounded-full flex items-center justify-center shadow-lg text-red-500'> <FaLocationDot className='text-3xl'/></div>
             <div className='flex flex-col gap-2'>
                 <h3 className='font-black text-cyan-900 text-xl'>Location</h3>
@@ -31,7 +31,7 @@ const ContactInfoBox = () => {
         </div>
 
         </div>
-        <div className='flex gap-5 contact-box'>
+        <div className='flex gap-5 contact-box' data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="250">
             <div className='contact-box-icon transition-all duration-300 bg-white h-16 w-16 rounded-full flex items-center justify-center shadow-lg text-red-500'> <FaRegEnvelope className='text-3xl'/></div>
             <div className='flex flex-col gap-2'>
                 <h3 className='font-black text-cyan-900 text-xl'>Email Address</h3>
